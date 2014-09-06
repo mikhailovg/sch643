@@ -2,10 +2,9 @@
 <link rel="stylesheet" href="/css/parts/footer.css">
 <footer class="footer">
     <div class="footer__ribbon"></div>
-    <p class="footer__copyright">&copy; 2014 setomaa.com</p>
+    <p class="footer__copyright">&copy; 2014 643.ru</p>
     <p class="footer__credits">
-        Печерская районная общественная организация<br>
-        «Этнокультурное общество Сето»<br>
+        ГБОУ школа № 643<br>
         Тел: +7 (8112) 98-76-34
     </p>
     <p class="footer__login-logout">

@@ -19,11 +19,4 @@ $(document).ready(function () {
     }
     else
         $(".articles__pages span").hide();
-
-    /*if (typeof(VK) != "undefined") {
-        VK.Widgets.Group("vk-groups__iframe", {mode: 0, width: "300", height: "400"}, 5481857);
-    }*/
-    for (var i=0; i<ids.length; i++) {
-        VK.Widgets.Like("article__like"+ids[i], {type: "mini"}, 'article' + ids[i]);
-    }
 });

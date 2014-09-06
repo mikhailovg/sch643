@@ -2,18 +2,19 @@
 require_once('../../shared/db.php');
 require_once('../../shared/auth.php');
 require_once('../../shared/paging.php');
-$page_title = "Новости – Сето";
+$page_title = "Новости – Школа №643";
 $css_files = array("/css/pages/news/articles.css", "/css/pages/news.css", "/css/parts/template.css");
 $js_files = array("/js/pages/news.js");
-include_once("../../parts/header.php");
-include_once("../../support/dateFormat.php");
 ?>
 
-    <div class="template__columns">
+<div class="background">
+    <div class="main">
+        <?
+        include_once("../../parts/header.php");
+        include_once("../../support/dateFormat.php");
+        ?>
+        <div class="template__columns">
         <div class="template__left-column">
-            <script>
-                var ids=[];
-            </script>
             <div class="articles">
                 <? if (isLoggedIn()) { ?>
                     <a class="articles__create-new-icon" href="/article/new"></a>
@@ -21,7 +22,7 @@ include_once("../../support/dateFormat.php");
 
                 $_PAGING = new Paging($db);
 
-                if(isset($_POST["search__input"])) {
+                    if(isset($_POST["search__input"])) {
                     $search = $_POST["search__input"];
                     $search = trim($search);
                     $search = mysql_real_escape_string($search);
@@ -29,20 +30,16 @@ include_once("../../support/dateFormat.php");
                     $r = $_PAGING->get_page("SELECT * FROM article WHERE UPPER(title) like UPPER('%$search%') OR UPPER(text) like UPPER('%$search%') ORDER BY date DESC");
                     ?>
                     <div class="articles__label">Результаты поиска:</div>
-                <?
-                }
-                else {
-                    $r = $_PAGING->get_page( 'SELECT * FROM article ORDER BY date DESC' );
-                    ?>
-                    <div class="articles__label">Последние новости Сето</div>
-                <?
-                }
-
-
-
-                /*if ($r->fetch_assoc() != null) {*/
+                    <?
+                    }
+                    else {
+                        $r = $_PAGING->get_page( 'SELECT * FROM article ORDER BY date DESC' );
+                        ?>
+                        <div class="articles__label">Последние новости</div>
+                    <?
+                    }
                     while($row = $r->fetch_assoc()) {
-                    ?>
+                        ?>
 
                         <div class="articles__article">
                             <? if (isLoggedIn()) { ?>
@@ -68,21 +65,18 @@ include_once("../../support/dateFormat.php");
                                 </div>
                                 <a class="articles__article-read" href="/article/<?echo $row["id"]?>">Читать дальше</a>
                                 <div id="article__like<?echo $row["id"]?>" style="float: right;"></div>
-                                <script>
-                                   ids.push(<?echo $row["id"]?>);
-                                </script>
                             </div>
                         </div>
 
                     <?
                     }
-               /* } else
-                    echo 'Новостей не найдено.';*/
-                ?>
-
-                <div class="articles__pages">
-                    <? echo $_PAGING->get_prev_page_link() . $_PAGING->get_page_links() . $_PAGING->get_next_page_link();
+                    /* } else
+                         echo 'Новостей не найдено.';*/
                     ?>
+
+                    <div class="articles__pages">
+                        <? echo $_PAGING->get_prev_page_link() . $_PAGING->get_page_links() . $_PAGING->get_next_page_link();
+                        ?>
                 </div>
             </div>
 
@@ -101,5 +95,6 @@ include_once("../../support/dateFormat.php");
 
         </div>
     </div>
-
-<?php include_once("../../parts/footer.php"); ?>
+        <?php include_once("../../parts/footer.php"); ?>
+    </div>
+</div>

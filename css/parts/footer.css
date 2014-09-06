@@ -2,12 +2,10 @@
     background-position: 0 4px;
     text-align: right;
     height: 50px;
+
+    border-top: 2px solid #043D8A;
 }
-.footer__ribbon {
-    border-top: 2px solid #E20103;
-    height: 18px;
-    background: url("/img/ornament-3.png") -4px 2px repeat-x;
-}
+
 .footer__copyright,
 .footer__credits,
 .footer__login-logout {
