@@ -1,0 +1,108 @@
+.article__img {
+    float: left;
+    margin: 4px 12px 0 0;
+    cursor: pointer;
+    height: 320px;
+}
+
+.article__block {
+    /*display: inline-flex;*/
+}
+
+.article__video {
+    text-align: center;
+    margin: 14px 12px 4px 0px;
+}
+
+.article__announcement {
+    color: #043D8A;
+    font: 20px Tahoma;
+    margin-bottom: 10px;
+}
+
+.article__date {
+    font: 10px Verdana;
+    margin: 12px 0px;
+    float: left;
+}
+
+.editArticle__headerTitle {
+    font: 20px Tahoma;
+    color: red;
+}
+
+/*.editArticle__title {
+    display: block;
+    color: #043D8A;
+    font: 18px Tahoma;
+    margin: 10px 0px;
+}*/
+
+.editArticle__titleString, .editArticle__text,.editArticle__img {
+    margin-bottom: 16px;
+}
+
+.editArticle__content {
+    width: 100%;
+}
+
+.editArticle__date .editArticle__content {
+    margin-right: 4px;
+    width: 104px;
+}
+
+.editArticle__date img {
+    cursor: pointer;
+}
+
+.seto__button {
+    margin: 10px 0;
+    margin-top: 6px;
+}
+.editArticle__saveButton {
+    margin: 14px 0;
+}
+
+.deleteVideo {
+    display: none;
+}
+
+.uploadImg, .uploadVideo {
+}
+
+.article__create-new-icon,
+.article__edit-article-icon,
+.article__delete-article-icon {
+    position: absolute;
+    left: -30px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.article__create-new-icon {
+    top: -2px;
+    background: url("/img/add-icon.png") no-repeat;
+}
+.article__edit-article-icon {
+    top: 2px;
+    background: url("/img/edit-icon.png") no-repeat;
+}
+.article__delete-article-icon {
+    top: 30px;
+    background: url("/img/delete-icon.png") no-repeat;
+}
+
+.uploadVideo__dialog {
+    overflow: hidden !important;
+}
+
+.youtube_video_url_original {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#article__like {
+    margin: 4px -26px !important;
+    clear: none !important;
+    float: right;
+}

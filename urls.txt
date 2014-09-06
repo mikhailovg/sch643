@@ -1,0 +1,55 @@
+/images/{image_path}				/php/download/images.php?image_path={image_path}
+/document/{document_id}    		    /php/download/document.php?document_id={document_id}
+
+/login								/php/pages/auth/login.php
+/logout								/php/pages/auth/logout.php
+
+/news/{page_number}    			    /php/pages/news/articles.php?page={page_number}
+/article/new            		    /php/pages/news/edit-article.php
+/article/{article_id}           	/php/pages/news/article.php?article_id={article_id}
+/article/{article_id}/edit      	/php/pages/news/edit-article.php?article_id={article_id}
+/article/{article_id}/delete    	/php/pages/news/delete-article.php?article_id={article_id}
+								    
+/business               		    /php/pages/business/business.php
+/business/new					    /php/pages/business/edit-business.php
+/business/{business_id}/edit		/php/pages/business/edit-business.php?business_id={business_id}
+/business/{business_id}/delete		/php/pages/business/delete-business.php?business_id={business_id}
+		                            
+/documents/{document_folder_id} 	/php/pages/documents/document-folder.php?document_folder_id={document_folder_id}
+/document/{document_folder_id}/new  /php/pages/documents/edit-document.php?document_folder_id={document_folder_id}
+/document/{document_id}/edit        /php/pages/documents/edit-document.php?document_id={document_id}
+/document/{document_id}	/delete	    /php/pages/documents/delete-document.php?document_id={document_id}
+
+/events								/php/pages/events/events.php
+/event/new							/php/pages/events/edit-event.php
+/event/{event_id}/edit				/php/pages/events/edit-event.php?id={event_id}
+/event/{event_id}/delete			/php/pages/events/delete-event.php?id={event_id}
+
+/albums								/php/pages/photos/photo-albums.php
+/album/new							/php/pages/photos/edit-photo-album.php
+/album/{photo_album_id}				/php/pages/photos/photo-album.php?album_id={photo_album_id}
+/album/{photo_album_id}/edit		/php/pages/photos/edit-photo-album.php?photo_album_id={photo_album_id}
+/album/{photo_album_id}/delete		/php/pages/photos/delete-photo-album.php?photo_album_id={photo_album_id}
+
+/photo/{photo_id}					/php/pages/photos/photo.php?photo_id={photo_id}
+/photo/{album_id}/new				/php/pages/photos/edit-photo.php?album_id={album_id}
+/photo/{photo_id}/edit				/php/pages/photos/edit-photo.php?photo_id={photo_id}
+/photo/{photo_id}/delete			/php/pages/photos/delete-photo.php?photo_id={photo_id}
+
+/videos/{page_number}				/php/pages/videos/videos.php?pane_number={page_number}
+/video/new							/php/pages/videos/edit-video.php
+/video/{video_id}/edit				/php/pages/videos/edit-video.php?video_id={video_id}
+/video/{video_id}/delete			/php/pages/videos/delete-video.php?video_id={video_id}
+                      
+/about                  		    /php/pages/other/about.php
+/contacts               		    /php/pages/other/contacts.php
+/projects	                        /php/pages/other/projects.php
+
+/404								/php/pages/404.php
+/505								/php/pages/505.php
+/museum								/php/pages/photos/photo-album.php?album_id=1
+/goods								/php/pages/documents/document-folder.php?document_folder_id=1
+
+/html/{html_id}/edit                /php/pages/html/edit-html.php?html_id={html_id}
+/search/{search}/{page_number}      /php/pages/news/articles.php?page={page_number}&search={search}
+/literature                         /php/pages/documents/document-folder.php?document_folder_id=2

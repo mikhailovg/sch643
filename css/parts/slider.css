@@ -1,0 +1,8 @@
+.slider {
+    border: 2px solid #E20103;
+    margin-bottom: 2px;
+    overflow: hidden;
+}
+.slider__slider {
+    margin: 0 -2px 0 -2px;
+}

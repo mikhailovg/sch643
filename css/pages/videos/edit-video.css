@@ -1,0 +1,17 @@
+.edit-video {
+    margin-bottom: 16px;
+}
+.edit-video__url,
+.edit-video__title,
+.edit-video__preview{
+    margin-bottom: 8px;
+}
+.edit-video__description {
+    margin-bottom: 16px;
+}
+.edit-video__url-input {
+    width: 320px;
+}
+.edit-video__title-input {
+    width: 636px;
+}

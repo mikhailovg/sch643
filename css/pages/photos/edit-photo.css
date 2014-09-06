@@ -1,0 +1,20 @@
+.edit-photo {
+    margin-bottom: 16px;
+}
+.edit-photo__file {
+    margin-bottom: 8px;
+}
+.edit-photo__description {
+    margin-bottom: 16px;
+}
+.edit-photo__description textarea {
+    width: 100%;
+    height: 150px;
+}
+.edit-photo__photo {
+    width: 640px;
+    overflow: hidden;
+}
+.edit-photo__file {
+    display: block;
+}

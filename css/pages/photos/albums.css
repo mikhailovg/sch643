@@ -1,0 +1,43 @@
+.albums {
+    position: relative;
+}
+.albums__add-photo-album-icon {
+    position: absolute;
+    left: -30px;
+    top: -2px;
+}
+.albums__label {
+    margin-bottom: 8px;
+}
+.albums__albums-list {
+    list-style: none;
+    margin: 0 -20px 0 0;
+    padding: 0;
+}
+.albums__album {
+    width: 145px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    margin-bottom: 14px;
+    overflow: hidden;
+}
+.albums__photo {
+    height: 145px;
+    width: 145px;
+    display: block;
+}
+.albums__album-name,
+.albums__photos-name {
+    text-align: left;
+    text-decoration: none;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+}
+.albums__album-name a {
+    text-decoration: none;
+}
+.albums__album-name a:hover {
+    text-decoration: underline;
+}

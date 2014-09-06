@@ -1,0 +1,18 @@
+.page-not-found {
+    text-align: center;
+    font-family: "Roboto Slab";
+    vertical-align: baseline;
+    padding: 20px 0 50px;
+}
+.page-not-found__error-code,
+.page-not-found__description {
+    display: inline-block;
+}
+.page-not-found__error-code {
+    font-size: 30px;
+    color: #ed1922;
+}
+.page-not-found__description {
+    font-size: 25px;
+    color: #043d8a;
+}

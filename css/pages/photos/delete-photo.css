@@ -1,0 +1,30 @@
+.delete-photo {
+    margin-bottom: 16px;
+}
+.delete-photo__album-name {
+    margin-bottom: 8px;
+}
+.delete-photo__photo {
+    margin-bottom: 8px;
+    position: relative;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.delete-photo__description {
+    margin-bottom: 8px;
+}
+.delete-photo__description p:first-child {
+    margin-top: 0;
+}
+.delete-photo__date-uploaded,
+.delete-photo__original-size-image {
+    display: inline;
+    margin-right: 4px;
+}
+.delete-photo__details {
+    margin-bottom: 10px;
+}

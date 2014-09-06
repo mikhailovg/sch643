@@ -1,0 +1,15 @@
+.delete-video {
+    margin-bottom: 16px;
+}
+.delete-video__iframe,
+.delete-video__title,
+.delete-video__date {
+    margin: 0 0 4px;
+    line-height: 16px;
+}
+.delete-video__description {
+    margin: 0;
+}
+.delete-video__description p:first-child {
+    margin-top: 0;
+}

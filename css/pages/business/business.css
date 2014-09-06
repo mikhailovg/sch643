@@ -1,0 +1,163 @@
+.business{
+    position: relative;
+    padding-bottom: 16px;
+}
+.business__add-event-icon {
+    height: 20px;
+    width: 20px;
+    background: url("/img/add-icon.png") no-repeat;
+    position: absolute;
+    top: -2px;
+    left: -30px;
+}
+
+.business__label{
+    margin-bottom: 8px;
+}
+.business__table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+.business__table th,
+.business__table td {
+    font-size: 13px;
+    border: 1px solid #DDD;
+    padding: 4px 8px;
+}
+.business__table th {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #043D8A;
+}
+.business__table p{
+    text-indent: 0;
+    font-size: 13px;
+    margin: 4px 0;
+}
+
+.business__name-column,
+.business__profile-column{
+    text-align: center;
+}
+.business__name-column{
+    width: 170px;
+}
+.business__profile-column{
+    width: 170px;
+}
+.business__tbody {
+
+ }
+.business__edit-event-icon,
+.business__delete-event-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.business__delete-event-icon {
+    left: -30px;
+    background: url('/img/delete-icon.png') no-repeat;
+}
+.business__edit-event-icon {
+    left: -60px;
+    background: url('/img/edit-icon.png') no-repeat;
+}
+.business__info-row p:first-child {
+    margin-top: 0;
+}
+.business__info-row p:last-child {
+    margin-bottom: 0;
+}
+.business__info-row--collapsed {
+    display: none;
+}
+.business__name-cell{
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+    color: #E20103;
+}
+
+
+.editBusiness__header{
+    font: 20px Tahoma;
+    color: red;
+}
+.editBusiness__label{
+    display: block;
+    color: #043D8A;
+    font: 18px Tahoma;
+    margin: 10px 0px;
+}
+.editBusiness__nameInput, .editBusiness__profileInput{
+    width: 100%;
+}
+
+.editBusiness_button{
+    margin: 15px 0;
+}
+.business__searchLabel{
+    font-size: 13px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    color: #043D8A;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.business__searchIcon{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: url("/img/search-icon.png") no-repeat;
+    position: absolute;
+    right: 3px;
+    top: 23px;
+}
+.business__searchInput{
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 25px;
+    padding: 3px 26px 3px 3px;
+}
+.business__search{
+    margin-bottom: 20px;
+    position: relative;
+    padding-top: 20px;
+}
+.business__paginatorPrevious{
+    background: url("/img/arrow-left.png") 0 0 no-repeat;
+}
+.business__paginatorNext{
+    background: url("/img/arrow-right.png") 0 0 no-repeat;
+}
+
+.business__paginatorPrevious,
+.business__paginatorNext{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin-top: -2px;
+    margin-bottom: -2px;
+}
+.business__paginator{
+    padding-top: 16px;
+    font-weight: bold;
+}
+.business__paginatorNum{
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 2px;
+    font-weight: bold;
+    margin-right: 7px;
+}
+.business__paginatorNum--current{
+    color: #ED1922;
+    text-decoration: none;
+    cursor: auto;
+}
+

@@ -1,0 +1,24 @@
+.footer {
+    background-position: 0 4px;
+    text-align: right;
+    height: 50px;
+}
+.footer__ribbon {
+    border-top: 2px solid #E20103;
+    height: 18px;
+    background: url("/img/ornament-3.png") -4px 2px repeat-x;
+}
+.footer__copyright,
+.footer__credits,
+.footer__login-logout {
+    margin: 4px 0;
+}
+.footer__credits {
+    font-size: 13px;
+    color: #043D8A;
+}
+.footer__copyright {
+    float: left;
+    color: #043D8A;
+    font: normal 19px/19px "Roboto Slab", serif;
+}

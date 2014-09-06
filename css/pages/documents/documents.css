@@ -1,0 +1,46 @@
+.documents {
+    line-height: 16px;
+    position: relative;
+}
+.documents__delete-document-icon,
+.documents__edit-document-icon,
+.documents__add-document-icon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -2px;
+    cursor: pointer;
+}
+.documents__add-document-icon {
+    background: url('/img/add-icon.png') no-repeat;
+    left: -30px;
+}
+.documents__edit-document-icon {
+    background: url('/img/edit-icon.png') no-repeat;
+    left: -80px;
+}
+.documents__delete-document-icon {
+    background: url('/img/delete-icon.png') no-repeat;
+    left: -50px;
+}
+.documents__list {
+    padding-left: 20px;
+}
+.documents__document {
+    position: relative;
+    margin-bottom: 16px;
+}
+.documents__name {
+    margin-bottom: 8px;
+    display: block;
+    color: #043D8A;
+}
+.documents__name:hover {
+    color: #E20103;
+}
+.documents__description {
+    margin: 0;
+}
+.comments {
+    padding: 20px 0;
+}

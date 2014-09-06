@@ -1,0 +1,17 @@
+.edit-document {
+    margin-bottom: 16px;
+}
+.edit-document__file,
+.edit-document__name-input {
+    margin-bottom: 8px;
+}
+.edit-document__name-input {
+    width: 320px;
+}
+.edit-document__description {
+    margin-bottom: 16px;
+}
+.edit-document__description textarea {
+    width: 100%;
+    height: 150px;
+}

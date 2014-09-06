@@ -1,0 +1,29 @@
+.loginForm {
+    margin: 24px 0 30px 380px;
+    width: 194px;
+}
+
+.login_title {
+    color: #ED1922;
+    font-family: "Roboto Slab";
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.login_field {
+    width: 120px;
+    float:right;
+    clear:both;
+}
+
+.login_row {
+    margin-bottom: 10px;
+}
+
+.login_submit {
+    margin: 8px 0 8px 67px;
+}
+
+.login_error {
+    color: #e20103;
+}

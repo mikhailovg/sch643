@@ -1,0 +1,12 @@
+.icon__add,
+.icon__delete,
+.icon__edit,
+.icon__config {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+.icon__add      { background: url("/img/add-icon.png")    no-repeat; }
+.icon__delete   { background: url("/img/delete-icon.png") no-repeat; }
+.icon__edit     { background: url("/img/edit-icon.png")   no-repeat; }
+.icon__config   { background: url("/img/config-icon.png") no-repeat; }

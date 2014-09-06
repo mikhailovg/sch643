@@ -1,0 +1,29 @@
+.other__editIcon{
+    background: url("/img/edit-icon.png") no-repeat;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.other{
+    min-height: 300px;
+    position: relative;
+}
+.partsHtml{
+    padding: 10px 0;
+}
+#partsHtml__submit{
+    margin-top: 10px;
+}
+.other__editIconLeft{
+    left: -30px;
+}
+.other__editIconRight{
+    right: -30px;
+}
+.other__header{
+    font: bold 13px/16px Arial, sans-serif;
+    color: #043D8A;
+    text-transform: uppercase;
+    margin: 4px 0 8px 0;
+}

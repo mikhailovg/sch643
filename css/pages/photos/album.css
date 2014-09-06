@@ -1,0 +1,25 @@
+.album {
+    position: relative;
+}
+.album__add-photo-icon,
+.album__edit-icon,
+.album__delete-icon {
+    position: absolute;
+    left: -30px;
+}
+.album__add-photo-icon { top: -2px; }
+.album__edit-icon      { top: 30px; }
+.album__delete-icon    { top: 60px; }
+.album__photos {
+    margin: 16px  -20px 0 0;
+    font-size: 0;
+}
+.album__photo {
+    width: 145px;
+    height: 145px;
+    margin: 0 20px 20px 0;
+    display: inline-block;
+}
+.album__comments {
+    padding-bottom: 10px;
+}

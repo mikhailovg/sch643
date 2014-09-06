@@ -1,0 +1,18 @@
+.forbidden{
+    text-align: center;
+    font-family: "Roboto Slab";
+    vertical-align: baseline;
+    padding: 20px 0 50px;
+}
+.forbidden__error-code,
+.forbidden__description {
+    display: inline-block;
+}
+.forbidden__error-code {
+    font-size: 30px;
+    color: #ed1922;
+}
+.forbidden__description {
+    font-size: 25px;
+    color: #043d8a;
+}
