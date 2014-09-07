@@ -4,11 +4,21 @@ CREATE TABLE `page` (
   `name` text COLLATE utf8_bin,
   `title` text COLLATE utf8_bin,
   `filePath` text COLLATE utf8_bin NOT NULL,
-  `layoutNumber` text COLLATE utf8_bin NOT NULL,
+  `layoutNumber` int(5) NOT NULL,
   `creationDate` timestamp NOT NULL,
   `status` text COLLATE utf8_bin NOT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  FOREIGN KEY (`layoutNumber`) REFERENCES `layout`(id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1 ;
+
+DROP TABLE IF EXISTS  `layout`;
+CREATE TABLE `layout` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` text COLLATE utf8_bin,
+  `title` text COLLATE utf8_bin,
+  `filePath` text COLLATE utf8_bin NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1;
 
 DROP TABLE IF EXISTS `article`;
 CREATE TABLE `article` (
