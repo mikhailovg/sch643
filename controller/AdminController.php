@@ -1,14 +1,20 @@
-<?
+<?php
 class AdminController {
 
+    private $settings;
+
+    function __construct($settings) {
+        $this->settings=$settings;
+    }
+
         public function getPages(){
-            $host='localhost';
+            /*$host='localhost';
             $database='school';
             $user='root';
             $pswd='';
             $db = new mysqli($host, $user, $pswd, $database);
             $db -> set_charset("utf8");
-
+*/
             $id="";
             $title="";
             $name="";
@@ -16,6 +22,7 @@ class AdminController {
             $layoutNumber="";
             $status="";
             $creationDate = date('Y/m/d H:i:s');
+            $db = $this->settings->get("db");
 
             $query = "SELECT id, name, title, filePath, layoutNumber, creationDate, status FROM page";
             $stmt = $db->prepare($query);

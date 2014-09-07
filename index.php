@@ -7,6 +7,10 @@
 //http://example.com/index.php?route=admin%2FgetPages
     include("./controller/DataStore.php");
 
+
+
+
+
     $requestMethod=$_SERVER['REQUEST_METHOD'];
     if($requestMethod==="GET"){
         $userRequestUrl=$_GET["route"];
@@ -29,17 +33,25 @@
 
 
     function delegateRequest( $userRequestUrl,$params){
+        $host='localhost';
+        $database='school';
+        $user='root';
+        $pswd='';
+        $db=new mysqli($host, $user, $pswd, $database);
+        $db -> set_charset("utf8");
+        $settings=new DataStore();
+        $settings->set("db",$db);
         if($userRequestUrl!=null){
             $urlParts=explode("/",$userRequestUrl);
             //echo $urlParts[0]."\n";
             //echo $urlParts[1];
             if(strpos($urlParts[0],"admin")!==FALSE){
                 include("./controller/AdminController.php");
-                $adminController=new AdminController();
+                $adminController=new AdminController($settings);
                 $adminController->$urlParts[1]($params);
             }else if(strpos($urlParts[0],"user")!==FALSE){
                 include("./controller/UserController.php");
-                $userController=new UserController();
+                $userController=new UserController($settings);
                 $userController->$urlParts[1]($params);
             }
 
