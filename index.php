@@ -40,7 +40,7 @@
             //echo $urlParts[1];
             if(strpos($urlParts[0],"admin")!==FALSE){
                 $adminController=new AdminController();
-                $adminController->$urlParts[1]($params);
+                $adminController->$urlParts[1]();
             }
 
         }
