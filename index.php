@@ -5,7 +5,8 @@
 //http://<host>/index.php?route=[urlFromUserRequest]
 //user request : http://example.com/admin/getPages будет преобразован в следующее:
 //http://example.com/index.php?route=admin%2FgetPages
-    include("./controller/DataStore.php");
+include("./controller/DataStore.php");
+include("./entites/Page.php");
 
 
 
@@ -41,6 +42,7 @@
         $db -> set_charset("utf8");
         $settings=new DataStore();
         $settings->set("db",$db);
+        $settings->set("Page",new Page());
         if($userRequestUrl!=null){
             $urlParts=explode("/",$userRequestUrl);
             //echo $urlParts[0]."\n";
@@ -48,7 +50,7 @@
             if(strpos($urlParts[0],"admin")!==FALSE){
                 include("./controller/AdminController.php");
                 $adminController=new AdminController($settings);
-                $adminController->$urlParts[1]($params);
+                $adminController->$urlParts[1]();
             }else if(strpos($urlParts[0],"user")!==FALSE){
                 include("./controller/UserController.php");
                 $userController=new UserController($settings);
