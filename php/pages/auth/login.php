@@ -43,12 +43,9 @@ else if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                         <script src="/js/libs/jstree.min.js"></script>
                         <script src="/js/pages/admin.js"></script>
 
-                        <div class="template__columns">
-                            <div class="template__left-column__admin">
-                                <div id="jstree"></div>
-                            </div>
-
-                            <div class="template__right-column">
+                        <div class="container">
+                            <div id="jstree"></div>
+                            <div id="data">
                                 2
                             </div>
                         </div>

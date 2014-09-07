@@ -13,8 +13,9 @@
     width: 640px;
     padding-right: 10px;
 }
-.template__left-column__admin {
-    width: 60px;
+.template-column__admin {
+    display: table-cell;
+    vertical-align: top;
     padding-right: 10px;
 }
 .template__right-column {

@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
 
 
-<button id="button1"><span>Привет Post</span></button>
+<button id="button1"><span>Привет Post</span></button><? include_once("php/support/connectBD.php"); ?>
 <script>
     $("#button1").click(function(){
         $.ajax({
