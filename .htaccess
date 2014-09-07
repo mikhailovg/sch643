@@ -216,67 +216,12 @@ AddDefaultCharset utf-8
   # Options +SymLinksIfOwnerMatch
     
     RewriteEngine On
-    RewriteBase /php/
+    RewriteBase /
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
     
-    RewriteRule ^$                        pages/news/articles.php                            [PT]
-    
-    RewriteRule ^administrator$           pages/auth/login.php                               [PT]
-    RewriteRule ^logout$                  pages/auth/logout.php                              [PT]
+    RewriteRule ^(.*)$                        index.php?route=$1                            [L,QSA]
 
-    RewriteRule ^news$                    pages/news/articles.php                            [PT]
-    RewriteRule ^article/new$             pages/news/edit-article.php                        [PT]
-    RewriteRule ^article/([^/]*)$         pages/news/article.php?article_id=$1               [PT]
-    RewriteRule ^article/([^/]*)/edit$    pages/news/edit-article.php?article_id=$1          [PT]
-    RewriteRule ^article/([^/]*)/delete$  pages/news/delete-article.php?article_id=$1        [PT]
-    RewriteRule ^news/([^/]*)$            pages/news/articles.php?page=$1                    [PT]
-
-    RewriteRule ^business$                pages/business/business.php                        [PT]
-    RewriteRule ^business_num/(.*)$       pages/business/business.php?page=$1                [PT]
-    RewriteRule ^business/new$            pages/business/edit-business.php                   [PT]
-    RewriteRule ^business/([^/]*)/edit$   pages/business/edit-business.php?id=$1             [PT]
-    RewriteRule ^business/delete$         pages/business/delete-business.php                 [PT]
-
-    RewriteRule ^((literature)|(service))$ pages/documents/documents.php?type=$1                    [PT]
-    RewriteRule ^literature/([^/]*)/edit$  pages/documents/edit-document.php?id=$1&type=literature  [PT]
-    RewriteRule ^service/([^/]*)/edit$     pages/documents/edit-document.php?id=$1&type=service     [PT]
-
-    RewriteRule ^((literature)|(service))/new$    pages/documents/edit-document.php?&type=$1        [PT]
-    RewriteRule ^document/delete$                 pages/documents/delete-document.php?              [PT]
-    RewriteRule ^document/download                pages/documents/download-document.php             [PT]
-
-    RewriteRule ^events$                  pages/events/events.php                            [PT]
-    RewriteRule ^event/new/$              pages/events/edit-event.php                        [PT]
-    RewriteRule ^event/([^/]*)/edit$      pages/events/edit-event.php?id=$1                  [PT]
-    RewriteRule ^event/delete$            pages/events/delete-event.php                      [PT]
-
-    RewriteRule ^albums$                  pages/photos/albums.php                            [PT]
-    RewriteRule ^album/new$               pages/photos/edit-album.php                        [PT]
-    RewriteRule ^album/([^/]*)$           pages/photos/album.php?album_id=$1                 [PT]
-    RewriteRule ^album/([^/]*)/edit$      pages/photos/edit-album.php?album_id=$1            [PT]
-    RewriteRule ^album/([^/]*)/delete$    pages/photos/delete-album.php?album_id=$1          [PT]
-
-    RewriteRule ^photo/([^/]*)$           pages/photos/photo.php?photo_id=$1                 [PT]
-    RewriteRule ^photo/([^/]*)/new$       pages/photos/edit-photo.php?album_id=$1            [PT]
-    RewriteRule ^photo/([^/]*)/edit$      pages/photos/edit-photo.php?photo_id=$1            [PT]
-    RewriteRule ^photo/([^/]*)/delete$    pages/photos/delete-photo.php?photo_id=$1          [PT]
-
-    RewriteRule ^videos$                  pages/videos/videos.php                            [PT]
-    RewriteRule ^videos/(.*)$             pages/videos/videos.php?page_number=$1             [PT]
-    RewriteRule ^video/new$               pages/videos/edit-video.php                        [PT]
-    RewriteRule ^video/([^/]*)/edit$      pages/videos/edit-video.php?video_id=$1            [PT]
-    RewriteRule ^video/([^/]*)/delete$    pages/videos/delete-video.php?video_id=$1          [PT]
-
-    RewriteRule ^about$                   pages/other/about.php                              [PT]
-    RewriteRule ^contacts$                pages/other/contacts.php                           [PT]
-    RewriteRule ^projects$                pages/other/projects.php                           [PT]
-
-    RewriteRule ^404$                     pages/404.php                                      [PT]
-    RewriteRule ^403$                     pages/403.php                                      [PT]
-    RewriteRule ^museum$                  pages/photos/album.php?album_id=1                  [PT]
-    RewriteRule ^goods$                   pages/photos/album.php?album_id=2                  [PT]
-
-    RewriteRule ^html/([^/]*)/edit$       pages/html/edit-html.php?html_id=$1                [PT]
-    RewriteRule ^search/([^/]*)/([^/]*)$  pages/news/articles.php?page=$1&search=$2          [PT]
 
     
 </IfModule>
