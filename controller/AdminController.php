@@ -30,7 +30,7 @@ class AdminController {
 
                 array_push($pages, $addPage);
             }
-            echo urlencode(json_encode($pages));
+            echo json_encode($pages);
         }
 }
 ?>

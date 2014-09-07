@@ -1,160 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="4b1b9d27-85f1-48ba-ab89-8fd9d1582a59" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\css\pages\photos\album.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\css\pages\photos\albums.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\css\pages\photos\delete-album.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\css\pages\photos\delete-photo.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\css\pages\photos\edit-album.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\css\pages\photos\edit-photo.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\css\pages\photos\photo.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\css\pages\videos\delete-video.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\css\pages\videos\edit-video.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\css\pages\videos\videos.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\db\DATA NEW" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\db\STRUCT NEW" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\js\pages\photos\album.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\js\pages\photos\albums.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\js\pages\photos\delete-album.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\js\pages\photos\delete-photo.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\js\pages\photos\edit-album.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\js\pages\photos\edit-photo.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\js\pages\photos\photo.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\js\pages\videos\delete-video.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\js\pages\videos\edit-video.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\js\pages\videos\videos.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\js\parts\html.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\js\parts\slider.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\php\pages\html\edit-html.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\php\pages\photos\album.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\php\pages\photos\albums.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\php\pages\photos\delete-album.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\php\pages\photos\delete-photo.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\php\pages\photos\edit-album.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\php\pages\photos\edit-photo.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\php\pages\photos\photo.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\php\pages\videos\delete-video.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\php\pages\videos\edit-video.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\php\pages\videos\videos.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\php\parts\html.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\php\parts\slider.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\php\shared\db.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\php\shared\images-processing.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\php\shared\upload-and-resize-images.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\php\uploads\images\normal\2014-04-16\image1397679706.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\php\uploads\images\normal\2014-04-16\image1397679750.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\php\uploads\images\normal\2014-04-16\image1397679767.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\files\literature\1398528778Tekhnicheskoe_zadanie.doc" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\files\literature\1398528811Tekhnicheskoe_zadanie.doc" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\files\literature\1398539304Tekhnicheskoe_zadanie.doc" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\files\literature\1398539495Tekhnicheskoe_zadanie.doc" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\files\literature\Tekhnicheskoe_zadanie.doc" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\files\literature\document1.pdf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\files\literature\document2.docx" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\files\service\1398528874Tekhnicheskoe_zadanie.doc" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\files\service\Tekhnicheskoe_zadanie.doc" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\files\service\document1.docx" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\files\service\document2.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\12\0_23140800_1397316699_145x145.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\12\0_23140800_1397316699_40x40.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\12\0_23140800_1397316699_640x.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\12\0_23140800_1397316699_original.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\12\0_38006100_1397316701_145x145.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\12\0_38006100_1397316701_40x40.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\12\0_38006100_1397316701_original.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\12\0_48405400_1397316700_145x145.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\12\0_48405400_1397316700_40x40.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\12\0_48405400_1397316700_original.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\12\0_60443200_1397316700_145x145.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\12\0_60443200_1397316700_40x40.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\12\0_60443200_1397316700_original.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\12\0_60625400_1397316701_145x145.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\12\0_60625400_1397316701_40x40.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\12\0_60625400_1397316701_original.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\12\0_82309800_1397316700_145x145.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\12\0_82309800_1397316700_40x40.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\12\0_82309800_1397316700_original.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\12\0_89877400_1397316699_145x145.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\12\0_89877400_1397316699_40x40.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\12\0_89877400_1397316699_640x.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\12\0_89877400_1397316699_original.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\12\0_90105300_1397316700_145x145.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\12\0_90105300_1397316700_40x40.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\12\0_90105300_1397316700_640x.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\12\0_90105300_1397316700_original.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\13\0_43429300_1397406004_145x145.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\13\0_43429300_1397406004_40x40.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\13\0_43429300_1397406004_640x.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\13\0_43429300_1397406004_original.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\13\0_93523700_1397406004_145x145.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\13\0_93523700_1397406004_40x40.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\13\0_93523700_1397406004_original.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_02572000_1397681801_145x145.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_02572000_1397681801_40x40.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_02572000_1397681801_original.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_06094000_1397682137_145x145.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_06094000_1397682137_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_06094000_1397682137_original.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_13159300_1397681991_145x145.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_13159300_1397681991_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_13159300_1397681991_original.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_23742200_1397681883_145x145.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_23742200_1397681883_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_23742200_1397681883_original.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_36352200_1397682007_145x145.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_36352200_1397682007_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_36352200_1397682007_original.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_37367900_1397681730_145x145.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_37367900_1397681730_40x40.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_37367900_1397681730_original.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_38300200_1397681351_145x145.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_38300200_1397681351_40x40.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_38300200_1397681351_original.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_62604000_1397681806_145x145.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_62604000_1397681806_40x40.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_62604000_1397681806_original.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_77785900_1397681995_145x145.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_77785900_1397681995_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_77785900_1397681995_original.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_90574200_1397681818_145x145.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_90574200_1397681818_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_90574200_1397681818_original.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_91335100_1397683035_145x145.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_91335100_1397683035_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\16\0_91335100_1397683035_original.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\26\0_02798600_1398543566_145x145.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\26\0_02798600_1398543566_320x320.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\26\0_02798600_1398543566_40x40.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\26\0_02798600_1398543566_original.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\26\0_12307900_1398544127_145x145.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\26\0_12307900_1398544127_320x320.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\26\0_12307900_1398544127_40x40.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\26\0_12307900_1398544127_original.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\26\0_59854200_1398542666_145x145.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\26\0_59854200_1398542666_320x320.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\26\0_59854200_1398542666_40x40.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\26\0_59854200_1398542666_original.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\26\0_65053800_1398546250_145x145.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\26\0_65053800_1398546250_320x320.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\26\0_65053800_1398546250_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\26\0_65053800_1398546250_original.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\26\0_81552600_1398543732_145x145.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\26\0_81552600_1398543732_320x320.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\26\0_81552600_1398543732_40x40.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\2014\04\26\0_81552600_1398543732_original.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\normal\2014-04-06\image1396792216-1-.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\normal\2014-04-06\image1396792217-2-.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\resize\2014-04-06\image1396792216-1-400x200.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Program Files\XAMPP\htdocs\uploads\images\resize\2014-04-06\image1396792217-2-400x200.jpg" afterPath="" />
+    <list default="true" id="4b1b9d27-85f1-48ba-ab89-8fd9d1582a59" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/AdminController.php" afterPath="$PROJECT_DIR$/controller/AdminController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/pages/admin.js" afterPath="$PROJECT_DIR$/js/pages/admin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/support/connectBD.php" afterPath="$PROJECT_DIR$/php/support/connectBD.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/libs/jstree.css" afterPath="$PROJECT_DIR$/css/libs/jstree.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/pages/auth/login.php" afterPath="$PROJECT_DIR$/php/pages/auth/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/start.php" afterPath="$PROJECT_DIR$/start.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/parts/template.css" afterPath="$PROJECT_DIR$/css/parts/template.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="www.iws" />
@@ -178,30 +27,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name=".htaccess" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.htaccess">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="222" column="50" selection-start="10024" selection-end="10024" vertical-scroll-proportion="0.0" vertical-offset="3541" max-vertical-offset="9707">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="connectBD.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/support/connectBD.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="17" selection-start="67" selection-end="67" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="238">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AdminController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/AdminController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="33" selection-start="61" selection-end="61" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="799">
+            <state line="18" column="12" selection-start="600" selection-end="600" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="697">
               <folding>
-                <marker date="1410093568738" expanded="true" signature="495:573" placeholder="SELECT id, n..page..." />
+                <marker date="1410098575418" expanded="true" signature="290:368" placeholder="SELECT id, n..page..." />
               </folding>
             </state>
           </provider>
@@ -210,27 +41,7 @@
       <file leaf-file-name="DataStore.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/DataStore.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="340">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="49" selection-start="1488" selection-end="1488" vertical-scroll-proportion="-15.692307" vertical-offset="306" max-vertical-offset="901">
-              <folding>
-                <element signature="e#7#54#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PageDto.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/entites/dto/PageDto.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="15" selection-start="325" selection-end="325" vertical-scroll-proportion="-8.807693" vertical-offset="26" max-vertical-offset="680">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
               <folding />
             </state>
           </provider>
@@ -239,34 +50,63 @@
       <file leaf-file-name="Page.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/entites/Page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="459">
+            <state line="3" column="6" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="459">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="auth.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/shared/auth.php">
+      <file leaf-file-name="login.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/pages/auth/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="238">
+            <state line="39" column="58" selection-start="1152" selection-end="1152" vertical-scroll-proportion="-8.653846" vertical-offset="438" max-vertical-offset="1632">
+              <folding>
+                <marker date="1410101122816" expanded="true" signature="261:313" placeholder="select login..admin..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/pages/admin.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="25" selection-start="726" selection-end="726" vertical-scroll-proportion="0.5627854" vertical-offset="0" max-vertical-offset="876">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="date.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/php/shared/date.php">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="18" selection-start="590" selection-end="590" vertical-scroll-proportion="0.55684006" vertical-offset="0" max-vertical-offset="519">
+            <state line="44" column="28" selection-start="1334" selection-end="1338" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1139">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="start.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/start.php">
+      <file leaf-file-name="UserController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="102" selection-start="395" selection-end="395" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="459">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="connectBD.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/support/connectBD.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="17" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="238">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PageDto.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/entites/dto/PageDto.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="15" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="765">
               <folding />
             </state>
           </provider>
@@ -322,15 +162,16 @@
         <option value="$PROJECT_DIR$/db/DATA NEW" />
         <option value="$PROJECT_DIR$/css/parts/header.css" />
         <option value="$PROJECT_DIR$/css/parts/footer.css" />
-        <option value="$PROJECT_DIR$/js/pages/admin.js" />
         <option value="$PROJECT_DIR$/css/parts/template.css" />
         <option value="$PROJECT_DIR$/css/libs/jstree.css" />
-        <option value="$PROJECT_DIR$/php/pages/auth/login.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/php/support/connectBD.php" />
         <option value="$PROJECT_DIR$/start.php" />
+        <option value="$PROJECT_DIR$/db/insert.ddl" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/controller/AdminController.php" />
+        <option value="$PROJECT_DIR$/php/pages/auth/login.php" />
+        <option value="$PROJECT_DIR$/js/pages/admin.js" />
       </list>
     </option>
   </component>
@@ -367,7 +208,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -626,66 +466,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="parts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="htdocs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="htdocs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="htdocs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -702,9 +489,26 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="141" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="140" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="141" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="815" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="141" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="140" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="141" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="815" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Program Files\XAMPP\htdocs\db" />
       <recent name="C:\Program Files\XAMPP\htdocs\css\libs" />
       <recent name="C:\Program Files\XAMPP\htdocs\js\libs" />
       <recent name="C:\WebServers\home\seto\www\js\libs\tinymce\plugins" />
@@ -782,30 +586,42 @@
       <created>1410085241687</created>
       <updated>1410085241687</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="getPages">
+      <created>1410093761206</created>
+      <updated>1410093761206</updated>
+    </task>
+    <task id="LOCAL-00008" summary="getPages">
+      <created>1410095567400</created>
+      <updated>1410095567400</updated>
+    </task>
+    <task id="LOCAL-00009" summary="4">
+      <created>1410097063280</created>
+      <updated>1410097063280</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1010" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32933104" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2172949" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.05234375" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.51995564" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.05234375" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1609375" sideWeight="0.47855917" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.51995564" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33064517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2172949" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -824,16 +640,88 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="1" />
     <MESSAGE value="2" />
     <MESSAGE value="3" />
     <MESSAGE value="tree" />
-    <option name="LAST_COMMIT_MESSAGE" value="tree" />
+    <MESSAGE value="getPages" />
+    <MESSAGE value="adminController" />
+    <MESSAGE value="5" />
+    <MESSAGE value="1" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/mikhailovg/sch643 into local&#10;&#10;Conflicts:&#10;&#9;controller/AdminController.php&#10;" />
+    <MESSAGE value="4" />
+    <option name="LAST_COMMIT_MESSAGE" value="4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/controller/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="48" selection-start="1166" selection-end="1166" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="697">
+          <folding>
+            <marker date="1410098575418" expanded="true" signature="290:368" placeholder="SELECT id, n..page..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/DataStore.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entites/Page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="6" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="459">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/pages/auth/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="35" selection-start="1495" selection-end="1495" vertical-scroll-proportion="0.0" vertical-offset="611" max-vertical-offset="1632">
+          <folding>
+            <marker date="1410101122816" expanded="true" signature="261:313" placeholder="select login..admin..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/pages/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="3" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="289">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="28" selection-start="1334" selection-end="1338" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1139">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/support/connectBD.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="17" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="238">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entites/dto/PageDto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="15" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="190" column="9" selection-start="5326" selection-end="5326" vertical-scroll-proportion="-9.230769" vertical-offset="2990" max-vertical-offset="19142" />
@@ -846,9 +734,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php/pages/news/article.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="994" selection-end="994" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1445">
-          <folding />
-        </state>
+        <state line="26" column="0" selection-start="994" selection-end="994" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1445" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/pages/news.js">
@@ -873,9 +759,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/parts/menu.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="1" selection-start="2563" selection-end="2563" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="459">
-          <folding />
-        </state>
+        <state line="21" column="1" selection-start="2563" selection-end="2563" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="459" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/img/light_background-wallpaper-3750x3000.jpg">
@@ -904,29 +788,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/urls.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="159" selection-end="159" vertical-scroll-proportion="-1.36" vertical-offset="0" max-vertical-offset="1020">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/struct.db">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="0" selection-start="4854" selection-end="4993" vertical-scroll-proportion="-15.36" vertical-offset="2149" max-vertical-offset="2703">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/data.db">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="11282" selection-end="11282" vertical-scroll-proportion="-8.52" vertical-offset="8" max-vertical-offset="1972">
-          <folding />
-        </state>
+        <state line="2" column="0" selection-start="159" selection-end="159" vertical-scroll-proportion="-1.36" vertical-offset="0" max-vertical-offset="1020" />
       </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
@@ -941,16 +803,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php/parts/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="17" selection-start="78" selection-end="78" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="391">
-          <folding />
-        </state>
+        <state line="2" column="17" selection-start="78" selection-end="78" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="391" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/parts/footer.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="19" selection-start="69" selection-end="86" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <folding />
-        </state>
+        <state line="3" column="19" selection-start="69" selection-end="86" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/parts/header.php">
@@ -969,51 +827,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/parts/template.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="24" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/pages/admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="33" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/pages/auth/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="35" selection-start="1495" selection-end="1495" vertical-scroll-proportion="-6.6862745" vertical-offset="458" max-vertical-offset="1632">
-          <folding>
-            <marker date="1410087098163" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1410087098163" expanded="true" signature="-1:-1" placeholder="select login..admin..." />
-            <marker date="1410087098163" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1410087098163" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1410087098163" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
+        <state line="17" column="24" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/libs/jstree.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="19" selection-start="24487" selection-end="24487" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
-          <folding />
-        </state>
+        <state line="12" column="19" selection-start="24487" selection-end="24487" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/pages/news/articles.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="43" selection-start="484" selection-end="559" vertical-scroll-proportion="0.1310212" vertical-offset="204" max-vertical-offset="1802">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/school.ddl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="9" selection-start="276" selection-end="282" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
-          <folding>
-            <marker date="1410085251592" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..page..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1038,9 +863,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/php/shared/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="579">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/shared/date.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="18" selection-start="590" selection-end="590" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php/support/connectBD.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="17" selection-start="67" selection-end="67" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="238">
+        <state line="3" column="17" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="238">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="579">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entites/dto/PageDto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="15" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="765">
           <folding />
         </state>
       </provider>
@@ -1054,46 +907,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="49" selection-start="1488" selection-end="1488" vertical-scroll-proportion="-15.692307" vertical-offset="306" max-vertical-offset="901">
-          <folding>
-            <element signature="e#7#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/AdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="33" selection-start="61" selection-end="61" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="799">
-          <folding>
-            <marker date="1410093568738" expanded="true" signature="495:573" placeholder="SELECT id, n..page..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entites/dto/PageDto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="15" selection-start="325" selection-end="325" vertical-scroll-proportion="-8.807693" vertical-offset="26" max-vertical-offset="680">
+        <state line="44" column="28" selection-start="1334" selection-end="1338" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1139">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/entites/Page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+        <state line="3" column="6" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="459">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/shared/auth.php">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/json.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="579">
+        <state line="50" column="9" selection-start="1512" selection-end="1512" vertical-scroll-proportion="0.22074789" vertical-offset="667" max-vertical-offset="3791">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/shared/date.php">
+    <entry file="file://$PROJECT_DIR$/controller/AdminController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="18" selection-start="590" selection-end="590" vertical-scroll-proportion="0.55684006" vertical-offset="0" max-vertical-offset="519">
+        <state line="18" column="12" selection-start="600" selection-end="600" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="697">
+          <folding>
+            <marker date="1410098575418" expanded="true" signature="290:368" placeholder="SELECT id, n..page..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/pages/auth/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="58" selection-start="1152" selection-end="1152" vertical-scroll-proportion="-8.653846" vertical-offset="438" max-vertical-offset="1632">
+          <folding>
+            <marker date="1410101122816" expanded="true" signature="261:313" placeholder="select login..admin..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/pages/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="25" selection-start="726" selection-end="726" vertical-scroll-proportion="0.5627854" vertical-offset="0" max-vertical-offset="876">
           <folding />
         </state>
       </provider>
