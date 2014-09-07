@@ -5,7 +5,7 @@ CREATE TABLE `page` (
   `title` text COLLATE utf8_bin,
   `filePath` text COLLATE utf8_bin NOT NULL,
   `layoutNumber` text COLLATE utf8_bin NOT NULL,
-  `creationDate` text COLLATE utf8_bin NOT NULL,
+  `creationDate` timestamp NOT NULL,
   `status` text COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1 ;
