@@ -19,7 +19,7 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
         $_SESSION['cn']=$login;
         $_SESSION['isAdmin']=true;
         $_SESSION['correctPassword']=true;
-        header('Location: /news');
+        header('Location: /administrator');
     }
     else {
         $_SESSION['correctPassword']=false;
@@ -27,35 +27,67 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
     }
 }
 else if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+    $css_files = array("/css/pages/login.css", "/css/libs/jstree.css", "/css/parts/template.css");
+     ?>
 
-    include_once("../../parts/header.php"); ?>
-    <link rel="stylesheet" href="/css/pages/login.css">
+<div class="background">
+    <div class="main">
+        <? include_once("../../parts/header.php"); ?>
 
-    <form id="loginForm" class="loginForm" action="administrator" method="POST">
-        <div class="login_title">Администрирование</div>
-        <?
-            if (isset($_SESSION['correctPassword'])) {
-                if ($_SESSION['correctPassword'] == true) { ?>
-                    <div class="login_row">Вы уже авторизованы.</div>
+
+            <div class="login_title">Администрирование</div>
+            <?
+                if (isset($_SESSION['correctPassword'])) {
+                    if ($_SESSION['correctPassword'] == true) { ?>
+
+                        <script src="/js/libs/jstree.min.js"></script>
+                        <script src="/js/pages/admin.js"></script>
+
+                        <div class="template__columns">
+                            <div class="template__left-column__admin">
+                                <div id="jstree"></div>
+                            </div>
+
+                            <div class="template__right-column">
+                                2
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
         <?
                 }
                 else { ?>
+        <form id="loginForm" class="loginForm" action="administrator" method="POST">
                     <div class="login_row"><label for="login" >Логин</label><input name="login" type="text" class="login_field"></div>
                     <div class="login_row"><label for="password" >Пароль</label><input name="password" type="password" class="login_field"></div>
                     <input type="submit" value="Войти" class="login_submit">
                     <div class="login_error">Пользователя с такими данными не существует</div>
+        </form>
         <?
                 }
             }
             else { ?>
+        <form id="loginForm" class="loginForm" action="administrator" method="POST">
                 <div class="login_row"><label for="login" >Логин</label><input name="login" type="text" class="login_field"></div>
                 <div class="login_row"><label for="password" >Пароль</label><input name="password" type="password" class="login_field"></div>
                 <input type="submit" value="Войти" class="login_submit">
+        </form>
         <?
             } ?>
-    </form>
 
-<?
-    }
-    include_once("../../parts/footer.php"); ?>
+        <?
+        }
+        include_once("../../parts/footer.php"); ?>
+    </div>
+</div>
+
 

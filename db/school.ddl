@@ -34,3 +34,9 @@ CREATE TABLE `article` (
    `youtube_video_url` varchar(255),
    PRIMARY KEY (`id`)
  );
+
+DROP TABLE IF EXISTS`admin`;
+CREATE TABLE `admin` (
+  `login` text COLLATE utf8_bin NOT NULL,
+  `password` text COLLATE utf8_bin NOT NULL
+);
