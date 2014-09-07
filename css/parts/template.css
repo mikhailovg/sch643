@@ -13,6 +13,23 @@
     width: 640px;
     padding-right: 10px;
 }
+.template__left-column__admin {
+    width: 60px;
+    padding-right: 10px;
+}
 .template__right-column {
     padding-left: 10px;
+}
+.background {
+    background: #000 url("/img/background_light_cream.jpg") repeat fixed left bottom;
+    margin-top: -2px;
+    height: 100%;
+}
+.main {
+    width: 1100px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #C6C7C8;
+    padding: 0 10px;
+    border-radius: 6px;
 }
