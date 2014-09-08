@@ -6,7 +6,6 @@
 //user request : http://example.com/admin/getPages будет преобразован в следующее:
 //http://example.com/index.php?route=admin%2FgetPages
 include("./controller/DataStore.php");
-include("./entites/Page.php");
 
 
 
@@ -42,7 +41,6 @@ include("./entites/Page.php");
         $db -> set_charset("utf8");
         $settings=new DataStore();
         $settings->set("db",$db);
-        $settings->set("Page",new Page());
         if($userRequestUrl!=null){
             $urlParts=explode("/",$userRequestUrl);
             //echo $urlParts[0]."\n";

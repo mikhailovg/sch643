@@ -35,6 +35,7 @@ class PageDto {
         $this->layoutNumber=$page->layoutNumber;
         $this->creationDate=$page->creationDate;
         $this->status=$page->status;
+        return $this;
     }
 
 } 
