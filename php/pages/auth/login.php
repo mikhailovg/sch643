@@ -19,15 +19,15 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
         $_SESSION['cn']=$login;
         $_SESSION['isAdmin']=true;
         $_SESSION['correctPassword']=true;
-        header('Location: /administrator');
+        header('Location: /php/pages/auth/login.php');
     }
     else {
         $_SESSION['correctPassword']=false;
-        header('Location: /administrator');
+        header('Location: /php/pages/auth/login.php');
     }
 }
 else if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-    $css_files = array("/css/pages/login.css", "/css/libs/jstree.css", "/css/parts/template.css");
+    $css_files = array("/css/pages/login.css", "/js/libs/jstree/themes/classic/style.css", "/css/parts/template.css");
      ?>
 
 <div class="background">
@@ -36,11 +36,11 @@ else if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
 
             <div class="login_title">Администрирование</div>
-            <?
+           <!-- --><!--?/*
                 if (isset($_SESSION['correctPassword'])) {
-                    if ($_SESSION['correctPassword'] == true) { ?>
+                    if ($_SESSION['correctPassword'] == true) { */?-->
 
-                        <script src="/js/libs/jstree.min.js"></script>
+                        <script src="/js/libs/jstree/jquery.jstree.js"></script>
                         <script src="/js/pages/admin.js"></script>
 
                         <div class="container">
@@ -60,26 +60,26 @@ else if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
 
 
-        <?
+       <!-- <!--?/*
                 }
-                else { ?>
+                else { */?>
         <form id="loginForm" class="loginForm" action="administrator" method="POST">
                     <div class="login_row"><label for="login" >Логин</label><input name="login" type="text" class="login_field"></div>
                     <div class="login_row"><label for="password" >Пароль</label><input name="password" type="password" class="login_field"></div>
                     <input type="submit" value="Войти" class="login_submit">
                     <div class="login_error">Пользователя с такими данными не существует</div>
         </form>
-        <?
+        --><!--?/*
                 }
-            }
+            }*/
             else { ?>
         <form id="loginForm" class="loginForm" action="administrator" method="POST">
                 <div class="login_row"><label for="login" >Логин</label><input name="login" type="text" class="login_field"></div>
                 <div class="login_row"><label for="password" >Пароль</label><input name="password" type="password" class="login_field"></div>
                 <input type="submit" value="Войти" class="login_submit">
         </form>
-        <?
-            } ?>
+        <!--?
+            } ?-->
 
         <?
         }

@@ -1,34 +1,30 @@
 $(function () {
-    createJSTrees(getJSONData());
+    createJSTrees();
 });
 
-function getJSONData() {
-    var test = [];
-    $.ajax({
-            url : "/admin/getPages",
-            dataType : "json",
-
-            success : function(json) {
-                for (var i = 0; i< json.length; i++) {
-                    test.push({
-                        "id" : json[i].id,
-                        "name" : json[i].name
-                    });
-                }
-            },
-
-            error : function(xhr, ajaxOptions, thrownError) {
-                alert(ajaxOptions);
-                alert(thrownError);
-                test = "error";
-            }
-        });
-    return test;
-}
-
-function createJSTrees(jsonData) {
+function createJSTrees() {
     $("#jstree").jstree({
-        "json_data" :jsonData,
+        json_data:{
+            progressive_render:true,
+            ajax:{
+                url: "/admin/getPages",
+                success: function (data) {
+                    return $.map(data, function (page) {
+                        var node = {};
+                        node.attr = {
+                            id: page.id,
+                            name: page.name
+                        };
+                        node.metadata = {
+                            id:page.id,
+                            name:page.name
+                        };
+                        node.data = page.name;
+                        return node;
+                    })
+                }
+            }
+        },
         "plugins" : [ "themes", "json_data", "ui" ]
     });
 }

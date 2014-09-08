@@ -34,3 +34,22 @@
     padding: 0 10px;
     border-radius: 6px;
 }
+
+#jstree {
+    float: left;
+    min-width: 260px;
+    background-color: white;
+    border-right: 1px solid silver;
+    overflow: auto;
+    padding: 0px 0;
+    height: 430px;
+}
+
+#data {
+    margin-left: 270px;
+}
+
+.container {
+    height: 430px;
+    margin-bottom: 4px;
+}
