@@ -8,4 +8,10 @@
 
 class UserController {
 
+    private $settings;
+
+    function __construct($settings) {
+        $this->settings=$settings;
+    }
+
 } 

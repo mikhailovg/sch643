@@ -43,7 +43,7 @@ class AdminController {
 
                 array_push($pages, $page);
             }
-            echo json_encode($pages);
+            echo json_encode($pages,JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
         }
 }
 ?>
