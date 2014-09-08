@@ -1,32 +1,56 @@
-.layout1 .nodes {
-    border: 2px solid black;
-    position: absolute;
-    top: 6%;
-    width: 7%;
-    height: 16%;
-}
-
-.layout1 .sections {
-    left: 8%;
-    position: absolute;
-    width: 20%;
-}
-
- .layout1 .content {
-    position: absolute;
-     left: 8%;
-     width: 20%;
-     top: 6%;
-     height: 30%;
-}
-
- .editable {
-    border: 1px solid green;
-}
- .layout1 .container {
+ .layout__container {
     position: relative;
+    width: 100%;
+     min-height: 50%;
+    margin-top: 10px;
 }
 
 .layout1 {
-    border-radius: 6px;
+    border-radius: 5px;
 }
+
+.layout1 .layout__nodes {
+    background-color: #eee;
+    float: left;
+    width: 22%;
+}
+ .layout1 .layout__nodes .text {
+     color: #666;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     margin: 4%;
+ }
+
+ .layout1 .layout__nodes .text:hover {
+     color: #043D8A;
+     cursor: pointer
+ }
+
+.layout1 .layout__sections {
+    margin-left: 23%;
+}
+
+.layout1 .layout__content {
+    margin: 1% 23%;
+    width: 76.8%;
+}
+
+.layout__editable {
+   /*border: 1px dashed green;*/
+}
+
+.layout1 .layout__save {
+    background-color: #eee;
+    border-radius: 4px;
+    display: inline-block;
+    height: 26px;
+    width: 242px;
+    vertical-align: middle;
+    margin-left: 72%;
+    margin-top: 6px;
+    margin-bottom: 8px;
+}
+
+
+

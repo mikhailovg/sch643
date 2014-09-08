@@ -52,6 +52,6 @@
         <span class="header__company-description">Официальный сайт ГБОУ школы № 643 Московского района Санкт-Петербурга</span>
     </div>
 </header>
-<?php include_once("menu.php"); ?>
+<?php /*include_once("menu.php"); */?>
 <main>
 

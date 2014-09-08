@@ -2,8 +2,8 @@
 include_once("../../support/connectBD.php");
 require_once("../../shared/auth.php");
 
-$page_title = "Администрирование – Сето";
-if($_SERVER['REQUEST_METHOD']==='POST'){
+$page_title = "Администрирование";
+/*if($_SERVER['REQUEST_METHOD']==='POST'){
 
     $login=$_POST['login'];
     $password=$_POST['password'];
@@ -26,9 +26,11 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
         header('Location: /php/pages/auth/login.php');
     }
 }
-else if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+else if ($_SERVER['REQUEST_METHOD'] == 'GET') {*/
     $css_files = array("/css/pages/login.css", "/js/libs/jstree/themes/classic/style.css", "/css/parts/template.css");
      ?>
+
+
 
 <div class="background">
     <div class="main">
@@ -46,7 +48,13 @@ else if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                         <div class="container">
                             <div id="jstree"></div>
                             <div id="data">
-                                2
+
+
+
+
+
+                                <? include_once("../layout1.php"); ?>
+
                             </div>
                         </div>
 
@@ -82,7 +90,7 @@ else if ($_SERVER['REQUEST_METHOD'] == 'GET') {
             } ?-->
 
         <?
-        }
+        //}
         include_once("../../parts/footer.php"); ?>
     </div>
 </div>

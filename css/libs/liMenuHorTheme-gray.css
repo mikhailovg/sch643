@@ -1,9 +1,10 @@
 /*user css (this edit)*/
 .menu_hor {
-	border:1px solid #ccc;
-	border-radius:5px;
-	background:#eee;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background: #eee;
 }
+
 .menu_hor a {
 	font:12px/1.2em Arial, Helvetica, sans-serif;
 	text-align:left; 
