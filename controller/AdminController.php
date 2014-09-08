@@ -8,40 +8,27 @@ class AdminController {
     }
 
         public function getPages(){
-            /*$host='localhost';
-            $database='school';
-            $user='root';
-            $pswd='';
-            $db = new mysqli($host, $user, $pswd, $database);
-            $db -> set_charset("utf8");
-*/
-            $id="";
-            $title="";
-            $name="";
-            $filePath="";
-            $layoutNumber="";
-            $status="";
-            $creationDate = date('Y/m/d H:i:s');
+            $page = $this->settings->get("Page");
             $db = $this->settings->get("db");
 
             $query = "SELECT id, name, title, filePath, layoutNumber, creationDate, status FROM page";
             $stmt = $db->prepare($query);
             $stmt->execute();
-            $stmt->bind_result($id, $name, $title, $filePath, $layoutNumber, $creationDate, $status);
+            $stmt->bind_result($page->id, $page->name, $page->title, $page->filePath, $page->layoutNumber, $page->creationDate, $page->status);
 
             $pages = array();
 
             while($stmt->fetch()){
-                $page = new stdClass;
-                $page->id = $id;
-                $page->name = $name;
-                $page->title = $title;
-                $page->filePath = $filePath;
-                $page->layoutNumber = $layoutNumber;
-                $page->creationDate = $creationDate;
-                $page->status = $status;
+                $addPage = new Page();
+                $addPage->id = $page->id;
+                $addPage->name = $page->name;
+                $addPage->title = $page->title;
+                $addPage->filePath = $page->filePath;
+                $addPage->layoutNumber = $page->layoutNumber;
+                $addPage->creationDate = $page->creationDate;
+                $addPage->status = $page->status;
 
-                array_push($pages, $page);
+                array_push($pages, $addPage);
             }
             echo json_encode($pages,JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
         }
