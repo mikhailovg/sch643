@@ -9,24 +9,22 @@
 
 
 <div class="layout1 layout__container">
-    <div class="layout1 layout__nodes">
-        <div class="text">Узел 1 фывлдфыжвлд</div>
-        <div class="text">Узел 1 фывлдфыжвлд</div>
-        <div class="text">Узел 1 фывлдфыжвлд</div>
-    </div>
+    <div class="layout1 layout__nodes"></div>
+
     <div class="layout1 layout__sections layout__editable">
         <ul class="menu_hor">
             <div title="Добавить раздел" class="menu_hor add_icon"></div>
-            <li><a href="#2">Раздел 1</a>
-            <li><a href="#3">Раздел 2</a>
-            <li ><a href="#4">Раздел 3</a>
+            <li><a>Добавьте раздел</a></li>
         </ul>
     </div>
+
     <div class="layout1 layout__content layout__editable">
         <form method="post" action="somepage">
             <textarea name="content" style="width:100%"></textarea>
         </form>
     </div>
+
     <button class="layout1 layout__save">Сохранить раздел</button>
+
 </div>
 

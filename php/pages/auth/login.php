@@ -37,7 +37,7 @@ else if ($_SERVER['REQUEST_METHOD'] == 'GET') {*/
         <? include_once("../../parts/header.php"); ?>
 
 
-            <div class="login_title">Администрирование</div>
+
            <!-- --><!--?/*
                 if (isset($_SESSION['correctPassword'])) {
                     if ($_SESSION['correctPassword'] == true) { */?-->
@@ -46,15 +46,15 @@ else if ($_SERVER['REQUEST_METHOD'] == 'GET') {*/
                         <script src="/js/pages/admin.js"></script>
 
                         <div class="container">
-                            <div id="jstree"></div>
+                            <div class="container_left">
+                                <div class="login_title">Администрирование узлов</div>
+                                <div title="Добавить узел" class="jstree_add_icon"></div>
+                                <div id="jstree"></div>
+                            </div>
+                            <div class="container_right">
+                                <div class="login_title_right">Редактирование узла</div>
                             <div id="data">
-
-
-
-
-
                                 <? include_once("../layout1.php"); ?>
-
                             </div>
                         </div>
 

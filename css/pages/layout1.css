@@ -22,10 +22,10 @@
      margin: 4%;
  }
 
- .layout1 .layout__nodes .text:hover {
+ /*.layout1 .layout__nodes .text:hover {
      color: #043D8A;
      cursor: pointer
- }
+ }*/
 
 .layout1 .layout__sections {
     margin-left: 23%;
@@ -45,11 +45,10 @@
     border-radius: 4px;
     display: inline-block;
     height: 26px;
-    width: 242px;
-    vertical-align: middle;
-    margin-left: 72%;
-    margin-top: 6px;
     margin-bottom: 8px;
+    margin-top: 6px;
+    vertical-align: middle;
+    width: 22%;
 }
 
 
