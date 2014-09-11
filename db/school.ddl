@@ -1,3 +1,12 @@
+DROP TABLE IF EXISTS  `layout`;
+CREATE TABLE `layout` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` text COLLATE utf8_bin,
+  `title` text COLLATE utf8_bin,
+  `filePath` text COLLATE utf8_bin NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1;
+
 DROP TABLE IF EXISTS  `page`;
 CREATE TABLE `page` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -10,15 +19,6 @@ CREATE TABLE `page` (
   PRIMARY KEY (`id`),
   FOREIGN KEY (`layoutNumber`) REFERENCES `layout`(id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1 ;
-
-DROP TABLE IF EXISTS  `layout`;
-CREATE TABLE `layout` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` text COLLATE utf8_bin,
-  `title` text COLLATE utf8_bin,
-  `filePath` text COLLATE utf8_bin NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1;
 
 DROP TABLE IF EXISTS `article`;
 CREATE TABLE `article` (
@@ -35,7 +35,7 @@ CREATE TABLE `article` (
    PRIMARY KEY (`id`)
  );
 
-DROP TABLE IF EXISTS`admin`;
+DROP TABLE IF EXISTS `admin`;
 CREATE TABLE `admin` (
   `login` text COLLATE utf8_bin NOT NULL,
   `password` text COLLATE utf8_bin NOT NULL

@@ -1,7 +1,6 @@
  .layout__container {
     position: relative;
     width: 100%;
-     min-height: 50%;
     margin-top: 10px;
 }
 
@@ -22,11 +21,6 @@
      margin: 4%;
  }
 
- /*.layout1 .layout__nodes .text:hover {
-     color: #043D8A;
-     cursor: pointer
- }*/
-
 .layout1 .layout__sections {
     margin-left: 23%;
 }
@@ -34,10 +28,6 @@
 .layout1 .layout__content {
     margin: 1% 23%;
     width: 76.8%;
-}
-
-.layout__editable {
-   /*border: 1px dashed green;*/
 }
 
 .layout1 .layout__save {

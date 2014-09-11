@@ -1,4 +1,4 @@
-<?
+﻿<?
 include_once("../../support/connectBD.php");
 require_once("../../shared/auth.php");
 
@@ -27,9 +27,11 @@ $page_title = "Администрирование";
     }
 }
 else if ($_SERVER['REQUEST_METHOD'] == 'GET') {*/
-    $css_files = array("/css/pages/login.css", "/js/libs/jstree/themes/classic/style.css", "/css/parts/template.css");
+    $css_files = array("/css/pages/login.css", "/js/libs/jstree/themes/classic/style.css", "/css/parts/template.css", "/js/libs/jquery-ui.css", );
      ?>
 
+                      <script src="/js/libs/jquery.min.js"></script>
+                        <script src="/js/libs/jstree/jquery-ui.min.js"></script>
 
 
 <div class="background">
@@ -47,16 +49,17 @@ else if ($_SERVER['REQUEST_METHOD'] == 'GET') {*/
 
                         <div class="container">
                             <div class="container_left">
-                                <div class="login_title">Администрирование узлов</div>
+                                <div class="login_title">Администрирование</div>
+                                <div class="">Список узлов:</div>
                                 <div title="Добавить узел" class="jstree_add_icon"></div>
                                 <div id="jstree"></div>
                             </div>
                             <div class="container_right">
-                                <div class="login_title_right">Редактирование узла</div>
-                            <div id="data">
-                                <? include_once("../layout1.php"); ?>
+                                    <div class="login_title_right">Редактирование узла</div>
+                                    <div id="data">
+                                        <? include_once("../layouts/layout1.php"); ?>
+                                    </div>
                             </div>
-                        </div>
 
 
 
@@ -94,5 +97,13 @@ else if ($_SERVER['REQUEST_METHOD'] == 'GET') {*/
         include_once("../../parts/footer.php"); ?>
     </div>
 </div>
+
+
+    <div id="addNode_dialog" title="Добавление узла" style="display: none;">
+        <label>Имя узла:</label>
+        <input type="text" name="name" id="addNode_dialog_name" class="text ui-widget-content ui-corner-all">
+        <label>Заголовок узла:</label>
+        <input type="text" name="title" id="addNode_dialog_title" class="text ui-widget-content ui-corner-all">
+    </div>
 
 

@@ -59,5 +59,16 @@ class AdminController {
         }
         echo json_encode($layouts,JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
     }
+
+    public function addNode($params){
+        $name = $params[0];
+        $title = $params[1];
+        $db = $this->settings->get("db");
+
+        $stmt = $db->prepare("INSERT INTO page(name, title, filePath, layoutNumber, creationDate, status) VALUES (?, ?, ?, ?, ?, ?)");
+        $stmt -> bind_param('ssssss', $name, $title, '', '1', date('Y/m/d H:i:s'), '');
+        $stmt->execute();
+        $stmt->close();
+    }
 }
 ?>
