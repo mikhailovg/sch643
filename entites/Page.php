@@ -17,5 +17,7 @@ class Page{
     public $creationDate;
     //активна, удалена, черновик
     public $status;
+    //активна, удалена, черновик
+    public $parentId;
 
 }

@@ -1,5 +1,6 @@
 <?php
 
+header('Content-Type: application/json');
 
 class AdminController {
 
@@ -13,14 +14,25 @@ class AdminController {
         include_once("./entites/Layout.php");
     }
 
-    public function getPages(){
+    public function getPagesByParent($params){
         $page = new Page();
         $db = $this->settings->get("db");
 
-        $query = "SELECT id, name, title, filePath, layoutNumber, creationDate, status FROM page";
-        $stmt = $db->prepare($query);
+        $parentId = $params->get("parentId");
+
+
+        if (intval($parentId) !== 0) {
+            $stmt = $db->prepare("SELECT id, name, title, filePath, layoutNumber, creationDate, status, parent_id FROM page where parent_id=?");
+            $stmt -> bind_param("i", $parentId);
+        } else {
+            $query = "SELECT id, name, title, filePath, layoutNumber, creationDate, status, parent_id FROM page where parent_id IS NULL";
+            $stmt = $db->prepare($query);
+        }
+        $stmt->bind_result($page->id, $page->name, $page->title, $page->filePath, $page->layoutNumber, $page->creationDate, $page->status, $page->parentId);
+
         $stmt->execute();
-        $stmt->bind_result($page->id, $page->name, $page->title, $page->filePath, $page->layoutNumber, $page->creationDate, $page->status);
+
+
 
         $pages = array();
         while($stmt->fetch()){
@@ -36,6 +48,7 @@ class AdminController {
             $pageDto=$pageDto->map($page);
             array_push($pages, $pageDto);
         }
+        $stmt->close();
         echo json_encode($pages,JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
     }
 
@@ -61,12 +74,16 @@ class AdminController {
     }
 
     public function addNode($params){
-        $name = $params[0];
-        $title = $params[1];
         $db = $this->settings->get("db");
 
-        $stmt = $db->prepare("INSERT INTO page(name, title, filePath, layoutNumber, creationDate, status) VALUES (?, ?, ?, ?, ?, ?)");
-        $stmt -> bind_param('ssssss', $name, $title, '', '1', date('Y/m/d H:i:s'), '');
+        $name = $params->get("name");
+        $title = $params->get("title");
+        $layout = "1";
+        $status = "node";
+        $date = date('Y/m/d H:i:s');
+
+        $stmt = $db->prepare("INSERT INTO page(name, title, layoutNumber, creationDate, status) VALUES (?, ?, ?, ?, ?)");
+        $stmt -> bind_param("ssids", $name, $title, $layout, $date, $status);
         $stmt->execute();
         $stmt->close();
     }
