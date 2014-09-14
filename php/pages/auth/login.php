@@ -1,4 +1,4 @@
-﻿<?
+﻿﻿﻿<?
 include_once("../../support/connectBD.php");
 require_once("../../shared/auth.php");
 
@@ -30,8 +30,8 @@ else if ($_SERVER['REQUEST_METHOD'] == 'GET') {*/
     $css_files = array("/css/pages/login.css", "/js/libs/jstree/themes/classic/style.css", "/css/parts/template.css", "/js/libs/jquery-ui.css", );
      ?>
 
-                      <script src="/js/libs/jquery.min.js"></script>
-                        <script src="/js/libs/jstree/jquery-ui.min.js"></script>
+<script src="/js/libs/jquery.min.js"></script>
+<script src="/js/libs/jstree/jquery-ui.min.js"></script>
 
 
 <div class="background">
@@ -50,14 +50,14 @@ else if ($_SERVER['REQUEST_METHOD'] == 'GET') {*/
                         <div class="container">
                             <div class="container_left">
                                 <div class="login_title">Администрирование</div>
-                                <div class="">Список узлов:</div>
-                                <div title="Добавить узел" class="jstree_add_icon"></div>
+                                <div class="">Список разделов:</div>
+                                <div title="Добавить раздел" class="jstree_add_icon"></div>
                                 <div id="jstree"></div>
                             </div>
                             <div class="container_right">
-                                    <div class="login_title_right">Редактирование узла</div>
+                                    <div class="login_title_right">Редактирование подраздела</div>
                                     <div id="data">
-                                        <? include_once("../layouts/layout1.php"); ?>
+                                        <? include_once("../../layouts/layout1.php"); ?>
                                     </div>
                             </div>
 
@@ -99,11 +99,37 @@ else if ($_SERVER['REQUEST_METHOD'] == 'GET') {*/
 </div>
 
 
-    <div id="addNode_dialog" title="Добавление узла" style="display: none;">
-        <label>Имя узла:</label>
-        <input type="text" name="name" id="addNode_dialog_name" class="text ui-widget-content ui-corner-all">
-        <label>Заголовок узла:</label>
-        <input type="text" name="title" id="addNode_dialog_title" class="text ui-widget-content ui-corner-all">
+    <div id="addNode_dialog" class="adminDialog" title="Добавление раздела" style="display: none;">
+        <label>Имя раздела:</label>
+        <input type="text" id="addNode_dialog_name" class="text ui-widget-content ui-corner-all">
+        <label>Заголовок раздела:</label>
+        <input type="text" id="addNode_dialog_title" class="text ui-widget-content ui-corner-all">
+    </div>
+    <div id="renameNode_dialog" class="adminDialog" title="Переименование раздела" style="display: none;">
+        <input type="hidden" id="renameNode_dialog_parentId">
+        <label>Имя раздела:</label>
+        <input type="text" id="renameNode_dialog_name" class="text ui-widget-content ui-corner-all">
+    </div>
+    <div id="deleteNode_dialog" class="adminDialog" title="Удаление раздела" style="display: none;">
+        <input type="hidden" id="deleteNode_dialog_parentId">
+        <label>Вы уверены, что хотите удалить раздел </label>
     </div>
 
+
+    <div id="addSection_dialog" class="adminDialog" title="Добавление подраздела" style="display: none;">
+        <input type="hidden" id="addSection_dialog_parentId">
+        <label>Имя подраздела:</label>
+        <input type="text" id="addSection_dialog_name" class="text ui-widget-content ui-corner-all">
+        <label>Заголовок подраздела:</label>
+        <input type="text" id="addSection_dialog_title" class="text ui-widget-content ui-corner-all">
+    </div>
+    <div id="renameSection_dialog" class="adminDialog" title="Переименование подраздела" style="display: none;">
+        <input type="hidden" id="renameSection_dialog_parentId">
+        <label>Имя подраздела:</label>
+        <input type="text" id="renameSection_dialog_name" class="text ui-widget-content ui-corner-all">
+    </div>
+    <div id="deleteSection_dialog" class="adminDialog" title="Удаление подраздела" style="display: none;">
+        <input type="hidden" id="deleteSection_dialog_parentId">
+        <label>Вы уверены, что хотите удалить подраздел </label>
+    </div>
 

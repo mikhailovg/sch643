@@ -79,11 +79,27 @@ class AdminController {
         $name = $params->get("name");
         $title = $params->get("title");
         $layout = "1";
-        $status = "node";
+        $status = "draft";
         $date = date('Y/m/d H:i:s');
 
         $stmt = $db->prepare("INSERT INTO page(name, title, layoutNumber, creationDate, status) VALUES (?, ?, ?, ?, ?)");
         $stmt -> bind_param("ssids", $name, $title, $layout, $date, $status);
+        $stmt->execute();
+        $stmt->close();
+    }
+
+    public function addSection($params){
+        $db = $this->settings->get("db");
+
+        $parentId = $params->get("parentId");
+        $name = $params->get("name");
+        $title = $params->get("title");
+        $layout = "1";
+        $status = "draft";
+        $date = date('Y/m/d H:i:s');
+
+        $stmt = $db->prepare("INSERT INTO page(name, title, layoutNumber, creationDate, status, parent_id) VALUES (?, ?, ?, ?, ?, ?)");
+        $stmt -> bind_param("ssidsi", $name, $title, $layout, $date, $status, $parentId);
         $stmt->execute();
         $stmt->close();
     }

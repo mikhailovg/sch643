@@ -1,6 +1,6 @@
-        <div class="container">
-            <div class="login_title">Главная</div>
-        </div>
+<div class="container">
+    <div class="login_title">Главная</div>
+</div>
 
 
 

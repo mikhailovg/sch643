@@ -38,10 +38,10 @@
     color: #e20103;
 }
 
-#addNode_dialog label {
+.adminDialog label {
     display: block;
     margin-top: 6px;
 }
-#addNode_dialog input {
+.adminDialog input {
     width: 100%;
 }

@@ -8,28 +8,6 @@
     border-radius: 5px;
 }
 
-.layout1 .layout__nodes {
-    background-color: #eee;
-    float: left;
-    width: 22%;
-}
- .layout1 .layout__nodes .text {
-     color: #666;
-     white-space: nowrap;
-     overflow: hidden;
-     text-overflow: ellipsis;
-     margin: 4%;
- }
-
-.layout1 .layout__sections {
-    margin-left: 23%;
-}
-
-.layout1 .layout__content {
-    margin: 1% 23%;
-    width: 76.8%;
-}
-
 .layout1 .layout__save {
     background-color: #eee;
     border-radius: 4px;
