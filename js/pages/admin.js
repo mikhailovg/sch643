@@ -6,16 +6,6 @@ $(function () {
 
 function createJSTrees() {
     $("#jstree")
-        .bind("select_node.jstree", function(e,data){
-            if (data.rslt.obj.hasClass("jstree-opened")) {
-                $(".container_right").show();
-                $(".layout1 .layout__content textarea").val(data.rslt.obj.attr("htmlContent"));
-                tinyInit();
-            } else {
-                console.log($("#jstree").height());
-                $(".container").height('$("#jstree").height()');
-            }
-        })
         .jstree({
             contextmenu:{
                 items: customMenu
@@ -30,18 +20,21 @@ function createJSTrees() {
                         };
                     },
                     success: function (data) {
-
-
                         return $.map(data, function (page) {
                             var node = {};
                             node.attr = {
                                 id: page.id,
                                 htmlContent: page.htmlContent,
-                                name: page.name
+                                name: page.name,
+                                parentId: page.parentId,
+                                status: status
                             };
                             node.metadata = {
                                 id:page.id,
-                                name:page.name
+                                htmlContent: page.htmlContent,
+                                name:page.name,
+                                parentId: page.parentId,
+                                status: status
                             };
                             node.data = page.name;
                             !page.parentId ? node.state='closed' : node.state='opened';
@@ -52,14 +45,31 @@ function createJSTrees() {
             },
         "plugins" : [ "themes", "json_data", "ui",'crrm','contextmenu' ]
         })
-        .bind('select_node.jstree', function (e, data) {
+
+        .bind("select_node.jstree", function(e,data){
+            if (data.rslt.obj.hasClass("jstree-opened")) {
+                tinymce.remove();
+                $("#data #nodeId").val(data.rslt.obj.attr("parentId"));
+                $("#data #sectionId").val(data.rslt.obj.attr("id"));
+                $(".container_right").show();
+                $(".layout__container textarea").val(data.rslt.obj.attr("htmlContent"));
+                tinyInit();
+            }
+            else {
+                $(".container_right").hide();
+            }
+        }
+    ).bind('select_node.jstree', function (e, data) {
             $("#jstree").jstree("toggle_node", data.rslt.obj);
         });
-}
+    }
 
 function addEventHandlers() {
     $(".jstree_add_icon").click(function() {
         $( "#addNode_dialog" ).dialog( "open" );
+    })
+    $(".layout__save").click(function() {
+        updateSection($("#data #nodeId").val(), $("#data #sectionId").val());
     })
 }
 
@@ -77,6 +87,34 @@ function addNode(name, title) {
         }
     });
 }
+function renameNode(id, name) {
+    $.ajax({
+        async: false,
+        type: "GET",
+        data: {
+			id: id,
+            name: name
+        },
+        url: "/admin/renameNode",
+        complete: function () {
+            createJSTrees();
+        }
+    });
+}
+function deleteNode(id) {
+    $.ajax({
+        async: false,
+        type: "GET",
+        data: {
+			id: id	
+        },
+        url: "/admin/deleteNode",
+        complete: function () {
+            createJSTrees();
+        }
+    });
+}
+
 
 function addSection(parentId, name, title) {
     $.ajax({
@@ -88,6 +126,49 @@ function addSection(parentId, name, title) {
             title: title
         },
         url: "/admin/addSection",
+        complete: function () {
+            createJSTrees();
+        }
+    });
+}
+function renameSection(id, name) {
+    $.ajax({
+        async: false,
+        type: "GET",
+        data: {
+			id: id,
+            name: name
+        },
+        url: "/admin/renameSection",
+        complete: function () {
+            createJSTrees();
+        }
+    });
+}
+function deleteSection(id) {
+    $.ajax({
+        async: false,
+        type: "GET",
+        data: {
+			id: id	
+        },
+        url: "/admin/deleteSection",
+        complete: function () {
+            createJSTrees();
+        }
+    });
+}
+
+function updateSection(nodeId, sectionId) {
+	$.ajax({
+        async: false,
+        type: "GET",
+        data: {
+			nodeId: nodeId,
+			sectionId: sectionId,
+			filePath: tinymce.get(0).getContent()
+        },
+        url: "/admin/updateSection",
         complete: function () {
             createJSTrees();
         }
@@ -105,6 +186,8 @@ function tinyInit() {
         toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
     });
 }
+
+
 
 function customMenu(node) {
     var items = {
@@ -142,7 +225,7 @@ function customMenu(node) {
         renameSection: {
             separator_before: true,
             separator_after: false,
-            label: "Переименовать раздел",
+            label: "Переименовать подраздел",
             action: function() {
                 $("#renameSection_dialog_parentId").val(node.attr("id"));
                 $("#renameSection_dialog_name").val(node.attr("name"));
@@ -152,7 +235,7 @@ function customMenu(node) {
         deleteSection: {
             separator_before: true,
             separator_after: false,
-            label: "Удалить раздел",
+            label: "Удалить подраздел",
             action: function() {
                 $("#deleteSection_dialog_parentId").val(node.attr("id"));
                 $("#deleteSection_dialog label").append("<b>" + node.attr("name") + "</b>?");
@@ -190,7 +273,7 @@ function addDialogs() {
         autoOpen: false,
         buttons: {
             "Переименовать раздел": function() {
-                renameNode($("#renameNode__dialog_parentId").val(),$("#renameNode_dialog_name").val(), $("#addNode_dialog_title").val());
+                renameNode($("#renameNode_dialog_parentId").val(),$("#renameNode_dialog_name").val());
                 $( this ).dialog( "close" );
             },
             "Отмена": function() {
@@ -203,7 +286,7 @@ function addDialogs() {
         autoOpen: false,
         buttons: {
             "Удалить раздел": function() {
-                deleteNode($("#deleteNode__dialog_parentId").val());
+                deleteNode($("#deleteNode_dialog_parentId").val());
                 $( this ).dialog( "close" );
             },
             "Отмена": function() {
@@ -232,7 +315,7 @@ function addDialogs() {
         autoOpen: false,
         buttons: {
             "Переименовать подраздел": function() {
-                renameSection($("#renameSection__dialog_parentId").val(),$("#renameSection_dialog_name").val(), $("#addSection_dialog_title").val());
+                renameSection($("#renameSection_dialog_parentId").val(),$("#renameSection_dialog_name").val());
                 $( this ).dialog( "close" );
             },
             "Отмена": function() {
@@ -245,7 +328,7 @@ function addDialogs() {
         autoOpen: false,
         buttons: {
             "Удалить подраздел": function() {
-                deleteSection($("#deleteSection__dialog_parentId").val());
+                deleteSection($("#deleteSection_dialog_parentId").val());
                 $( this ).dialog( "close" );
             },
             "Отмена": function() {

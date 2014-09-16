@@ -29,10 +29,7 @@ class AdminController {
             $stmt = $db->prepare($query);
         }
         $stmt->bind_result($page->id, $page->name, $page->title, $page->filePath, $page->layoutNumber, $page->creationDate, $page->status, $page->parentId);
-
         $stmt->execute();
-
-
 
         $pages = array();
         while($stmt->fetch()){
@@ -49,6 +46,7 @@ class AdminController {
             array_push($pages, $pageDto);
         }
         $stmt->close();
+
         echo json_encode($pages,JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
     }
 
@@ -103,5 +101,94 @@ class AdminController {
         $stmt->execute();
         $stmt->close();
     }
-}
+    
+    public function renameNode($params){
+        $db = $this->settings->get("db");
+
+        $id = $params->get("id");
+        $name = $params->get("name");
+
+        $stmt = $db->prepare("UPDATE page SET name=? where id=?");
+        $stmt -> bind_param("si", $name, $id);
+        $stmt->execute();
+        $stmt->close();
+    }
+    
+    public function deleteNode($params){
+        $db = $this->settings->get("db");
+
+        $id = $params->get("id");
+
+        $stmt = $db->prepare("DELETE from page where id=?");
+        $stmt -> bind_param("i", $id);
+        $stmt->execute();
+        $stmt->close();
+    } 
+    
+    public function renameSection($params){
+        $db = $this->settings->get("db");
+
+        $id = $params->get("id");
+        $name = $params->get("name");
+
+        $stmt = $db->prepare("UPDATE page SET name=? where id=?");
+        $stmt -> bind_param("si", $name, $id);
+        $stmt->execute();
+        $stmt->close();
+    }
+    
+    public function deleteSection($params){
+        $db = $this->settings->get("db");
+        $filePath='';
+        $id = $params->get("id");
+
+        $stmt = $db->prepare("SELECT filePath from page where id=?");
+        $stmt -> bind_param("i", $id);
+        $stmt->execute();
+        $stmt->bind_result($filePath);
+        $stmt->close();
+
+        $stmt = $db->prepare("DELETE from page where id=?");
+        $stmt -> bind_param("i", $id);
+        $stmt->execute();
+        $stmt->close();
+
+        echo $filePath;
+        unlink($filePath);
+    } 
+    
+    public function updateSection($params){
+        $db = $this->settings->get("db");
+
+        $nodeId = $params->get("nodeId");
+        $sectionId = $params->get("sectionId");
+        $htmlContent = $params->get("filePath");
+		$status = "active";
+		$filePath = getcwd() . "\\php\\pages\\custom\\" . $sectionId . ".php";
+
+        $stmt = $db->prepare("UPDATE page set filePath=?, status=? where id=?");
+        $stmt -> bind_param("ssi", $filePath, $status, $sectionId);
+        $stmt->execute();
+        $stmt->close();
+
+        ini_set('display_errors', 'On');
+        error_reporting(E_ALL);
+
+        echo "123_".is_writable($filePath);
+
+        echo getcwd() . "____" . $filePath;
+        $fp = fopen($filePath, 'w');
+
+        if (false === $fp) {
+            throw new RuntimeException('Unable to open file for writing');
+        }
+
+        $write=fwrite($fp, $htmlContent);
+        if(!$write){
+            echo 'error writing';
+        }
+        fclose($fp);
+    } 
+}	
+
 ?>

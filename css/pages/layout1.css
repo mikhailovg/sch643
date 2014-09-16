@@ -6,17 +6,16 @@
 
 .layout1 {
     border-radius: 5px;
+    margin: 10px 0;
 }
 
-.layout1 .layout__save {
+.layout__save {
     background-color: #eee;
     border-radius: 4px;
     display: inline-block;
-    height: 26px;
-    margin-bottom: 8px;
-    margin-top: 6px;
+    height: 30px;
     vertical-align: middle;
-    width: 22%;
+    width: 200px;
 }
 
 

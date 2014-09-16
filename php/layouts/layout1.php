@@ -4,4 +4,4 @@
     <textarea></textarea>
 </div>
 
-<button>Сохранить подраздел</button>
+<button class="layout__save">Сохранить подраздел</button>
