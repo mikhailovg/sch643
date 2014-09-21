@@ -45,3 +45,6 @@
 .adminDialog input {
     width: 100%;
 }
+#deleteNode_dialog_name, #deleteSection_dialog_name {
+    font-weight: bold;
+}

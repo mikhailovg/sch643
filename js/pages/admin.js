@@ -66,6 +66,8 @@ function createJSTrees() {
 
 function addEventHandlers() {
     $(".jstree_add_icon").click(function() {
+        $("#addNode_dialog_name").val("");
+        $("#addNode_dialog_title").val("");
         $( "#addNode_dialog" ).dialog( "open" );
     })
     $(".layout__save").click(function() {
@@ -145,12 +147,13 @@ function renameSection(id, name) {
         }
     });
 }
-function deleteSection(id) {
+function deleteSection(id, filePath) {
     $.ajax({
         async: false,
         type: "GET",
         data: {
-			id: id	
+			id: id,
+            filePath: filePath
         },
         url: "/admin/deleteSection",
         complete: function () {
@@ -197,6 +200,8 @@ function customMenu(node) {
             label: "Добавить подраздел",
             action: function() {
                 $("#addSection_dialog_parentId").val(node.attr("id"));
+                $("#addSection_dialog_name").val("");
+                $("#addSection_dialog_title").val("");
                 $("#addSection_dialog" ).dialog( "open" );
             }
         },
@@ -216,7 +221,7 @@ function customMenu(node) {
             label: "Удалить раздел",
             action: function() {
                 $("#deleteNode_dialog_parentId").val(node.attr("id"));
-                $("#deleteNode_dialog label").append("<b>" + node.attr("name") + "</b>?");
+                $("#deleteNode_dialog_name").text(node.attr("name"));
                 $("#deleteNode_dialog").dialog( "open" );
             }
         },
@@ -238,7 +243,7 @@ function customMenu(node) {
             label: "Удалить подраздел",
             action: function() {
                 $("#deleteSection_dialog_parentId").val(node.attr("id"));
-                $("#deleteSection_dialog label").append("<b>" + node.attr("name") + "</b>?");
+                $("#deleteSection_dialog_name").text(node.attr("name"));
                 $("#deleteSection_dialog" ).dialog( "open" );
             }
         }

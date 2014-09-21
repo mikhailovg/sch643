@@ -36,7 +36,9 @@
     </div>
     <div id="deleteNode_dialog" class="adminDialog" title="Удаление раздела" style="display: none;">
         <input type="hidden" id="deleteNode_dialog_parentId">
-        <label>Вы уверены, что хотите удалить раздел </label>
+        <span>Вы уверены, что хотите удалить раздел </span>
+        <span id="deleteNode_dialog_name"></span>
+        <span>?</span>
     </div>
 
 
@@ -54,6 +56,8 @@
     </div>
     <div id="deleteSection_dialog" class="adminDialog" title="Удаление подраздела" style="display: none;">
         <input type="hidden" id="deleteSection_dialog_parentId">
-        <label>Вы уверены, что хотите удалить подраздел </label>
+        <span>Вы уверены, что хотите удалить подраздел </span>
+        <span id="deleteSection_dialog_name"></span>
+        <span>?</span>
     </div>
 <?include_once("../../parts/footer.php");?>

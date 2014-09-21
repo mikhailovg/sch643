@@ -144,8 +144,10 @@ class AdminController {
 
         $stmt = $db->prepare("SELECT filePath from page where id=?");
         $stmt -> bind_param("i", $id);
-        $stmt->execute();
         $stmt->bind_result($filePath);
+        $stmt->execute();
+
+        $filePath = $stmt->fetch();
         $stmt->close();
 
         $stmt = $db->prepare("DELETE from page where id=?");
@@ -153,9 +155,8 @@ class AdminController {
         $stmt->execute();
         $stmt->close();
 
-        echo $filePath;
         unlink($filePath);
-    } 
+    }
     
     public function updateSection($params){
         $db = $this->settings->get("db");
