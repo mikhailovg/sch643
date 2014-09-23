@@ -48,3 +48,11 @@
 #deleteNode_dialog_name, #deleteSection_dialog_name {
     font-weight: bold;
 }
+
+.login-row {clear:both; text-align:right; line-height:28px;}
+.login-row label {float:left; padding-right:10px;}
+#loginForm {float:left}
+#loginForm > input {
+    margin-top: 10px;
+    width: 100%;
+}

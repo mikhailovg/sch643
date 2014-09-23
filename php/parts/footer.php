@@ -8,10 +8,9 @@
         Тел: +7 (812) 111-00-00
     </p>
     <p class="footer__login-logout">
-        <!--? if (isLoggedIn()) { ?-->
-            <!--a href="/logout">Выход из админстрирования</a-->
-        <!--? } ?-->
-
+        <? if (isLoggedIn()) { ?>
+            <a href="/php/pages/auth/logout.php">Выход из админстрирования</a>
+        <? } ?>
     </p>
 </footer>
 </body>

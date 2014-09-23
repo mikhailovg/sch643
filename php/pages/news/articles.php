@@ -1,6 +1,4 @@
 <?
-require_once('../../shared/db.php');
-require_once('../../shared/auth.php');
 require_once('../../shared/paging.php');
 $page_title = "Новости – Школа №643";
 $css_files = array("/css/pages/news/articles.css", "/css/pages/news.css", "/css/parts/template.css");

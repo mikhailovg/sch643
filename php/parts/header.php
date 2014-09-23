@@ -2,12 +2,13 @@
 <html>
 <head><meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><?=$page_title?></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="/css/libs/normalize.css" rel="stylesheet">
     <link href="/css/parts/header.css" rel="stylesheet">
     <link href="/css/parts/template.css" rel="stylesheet">
-    <link href="/css/parts/login.css" rel="stylesheet">
+    <link href="/css/pages/login.css" rel="stylesheet">
     <?
     if (isset($css_files)) {
         foreach($css_files as $css_file) { ?>

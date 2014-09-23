@@ -72,10 +72,21 @@
 .container_right {
     display: none;
 }
-
+.container_center {
+    margin-left: 38%;
+    width: 24%;
+}
 html {
     height: 100%;
 }
 body {
     height: 99.8%;
+}
+
+.bttn {
+    background-color: #eee;
+    border-radius: 4px;
+    display: inline-block;
+    height: 30px;
+    vertical-align: middle;
 }
