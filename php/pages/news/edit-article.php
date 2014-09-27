@@ -1,9 +1,8 @@
-<?
-include_once("../../support/connectBD.php");
+<?include_once("../../support/connectBD.php");
 include_once("../../support/dateFormat.php");
 require_once("../../shared/youtube.php");
 require_once("../../shared/auth.php");
-$page_title = "Редактирование новости – Сето";
+$page_title = "Редактирование новости – Школа №643";
 
 if (!isLoggedIn()) {
     header("Location: /403");
@@ -69,7 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stmt->execute();
     $stmt->close();
 
-    header('Location: /news');
+    header('Location: /php/pages/news/articles.php');
     die();
 }
 
@@ -170,8 +169,6 @@ else if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
     <div class="deleteArticle__dialog" title="Удаление новости" style="display:none;">
         <p>Вы уверены, что хотите удалить новость?</p>
-    </div>
-
     </div>
 <?
 }

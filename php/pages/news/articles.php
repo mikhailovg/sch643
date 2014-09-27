@@ -1,21 +1,22 @@
-<?
+<?$page_title = "Новости – Школа №643";
+require_once('../../shared/auth.php');
 require_once('../../shared/paging.php');
-$page_title = "Новости – Школа №643";
-$css_files = array("/css/pages/news/articles.css", "/css/pages/news.css", "/css/parts/template.css");
-$js_files = array("/js/pages/news.js");
-?>
+include_once("../../support/dateFormat.php");
+include_once("../../support/connectBD.php");
 
-<div class="background">
-    <div class="main">
-        <?
-        include_once("../../parts/header.php");
-        include_once("../../support/dateFormat.php");
-        ?>
-        <div class="template__columns">
-        <div class="template__left-column">
+$css_files = array("/css/pages/news/articles.css",  "/css/parts/template.css");
+$js_files = array("/js/pages/news.js");
+include_once("../../parts/header.php");
+?>
+        <div style="margin-left: 30%;">
+            <form class="articles__search" enctype="application/x-www-form-urlencoded" method="POST">
+                <label class="search__label" for="search__input">Поиск по новостям</label>
+                <span title="Найти" class="search__icon" onclick="$('.articles__search').submit()"></span>
+                <input class="search__input" name="search__input" placeholder="Введите тему для поиска...">
+            </form>
             <div class="articles">
                 <? if (isLoggedIn()) { ?>
-                    <a class="articles__create-new-icon" href="/article/new"></a>
+                    <a class="articles__create-new-icon" href=edit-article.php></a>
                 <? }
 
                 $_PAGING = new Paging($db);
@@ -65,13 +66,7 @@ $js_files = array("/js/pages/news.js");
                                 <div id="article__like<?echo $row["id"]?>" style="float: right;"></div>
                             </div>
                         </div>
-
-                    <?
-                    }
-                    /* } else
-                         echo 'Новостей не найдено.';*/
-                    ?>
-
+<? } ?>
                     <div class="articles__pages">
                         <? echo $_PAGING->get_prev_page_link() . $_PAGING->get_page_links() . $_PAGING->get_next_page_link();
                         ?>
@@ -79,20 +74,5 @@ $js_files = array("/js/pages/news.js");
             </div>
 
         </div>
-        <div class="template__right-column">
-            <form class="articles__search" enctype="application/x-www-form-urlencoded" method="POST">
-                <label class="search__label" for="search__input">Поиск по новостям</label>
-                <span title="Найти" class="search__icon" onclick="$('.articles__search').submit()"></span>
-                <input class="search__input" name="search__input" placeholder="Введите тему для поиска...">
-            </form>
 
-            <?php
-            $idEditOrLoadBlock = 4;
-            include_once('../../parts/html.php');
-            ?>
-
-        </div>
-    </div>
         <?php include_once("../../parts/footer.php"); ?>
-    </div>
-</div>
