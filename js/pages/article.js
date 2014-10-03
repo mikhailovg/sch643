@@ -6,12 +6,12 @@ function openInNewTab(url )
 
 $(document).ready(function () {
 
-    var hash = window.location.hash.substr(1);
+    /*var hash = window.location.hash.substr(1);
     if (hash) {
         article_id = parseInt(hash);
     }
     display_comments(article_id);
-    display_like(article_id);
+    display_like(article_id);*/
     $(".article__img").click(function() {
         openInNewTab($(this).attr('originalImagePath'));
     })

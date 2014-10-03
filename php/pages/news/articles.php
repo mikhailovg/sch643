@@ -9,11 +9,11 @@ $js_files = array("/js/pages/news.js");
 include_once("../../parts/header.php");
 ?>
         <div style="margin-left: 30%;">
-            <form class="articles__search" enctype="application/x-www-form-urlencoded" method="POST">
+            <div class="articles__search" enctype="application/x-www-form-urlencoded" method="POST">
                 <label class="search__label" for="search__input">Поиск по новостям</label>
                 <span title="Найти" class="search__icon" onclick="$('.articles__search').submit()"></span>
                 <input class="search__input" name="search__input" placeholder="Введите тему для поиска...">
-            </form>
+            </div>
             <div class="articles">
                 <? if (isLoggedIn()) { ?>
                     <a class="articles__create-new-icon" href=edit-article.php></a>
@@ -42,31 +42,31 @@ include_once("../../parts/header.php");
 
                         <div class="articles__article">
                             <? if (isLoggedIn()) { ?>
-                                <a class="articles__edit-article-icon" href="/article/<?echo $row["id"]?>/edit"></a>
-                                <a class="articles__delete-article-icon" href="/article/<?echo $row["id"]?>/delete"></a>
+                                <a class="articles__edit-article-icon" href="edit-article.php?article_id=<?echo $row["id"]?>"></a>
+                                <a class="articles__delete-article-icon" href="delete-article.php?article_id=<?echo $row["id"]?>"></a>
                             <? } ?>
                             <div class="articles__article-photo-wrapper">
                                 <?
                                 if ($row["medium_image_thumbnail_path"] != null) {
                                     ?>
-                                    <a href="/article/<?echo $row["id"]?>"><img class="articles__article-photo" src="<?echo $row["medium_image_thumbnail_path"]?>"></a>
+                                    <a href="article.php?article_id=<?echo $row["id"]?>"><img class="articles__article-photo" src="<?echo $row["medium_image_thumbnail_path"]?>"></a>
                                 <?
                                 }
                                 ?>
                             </div>
                             <div class="articles__article-text-wrapper">
-                                <a class="articles__article-title" href="/article/<?echo $row["id"]?>"><?echo $row["title"]?></a>
+                                <a class="articles__article-title" href="article.php?article_id=<?echo $row["id"]?>"><?echo $row["title"]?></a>
                                 <h5 class="articles__article-date"><?echo getFormatDate($row["date"])?></h5>
                                 <div class="articles__article-announcement">
                                     <p>
                                         <?echo $row["announcement"]?>
                                     </p>
                                 </div>
-                                <a class="articles__article-read" href="/article/<?echo $row["id"]?>">Читать дальше</a>
+                                <a class="articles__article-read" href="article.php?article_id=<?echo $row["id"]?>">Читать дальше</a>
                                 <div id="article__like<?echo $row["id"]?>" style="float: right;"></div>
                             </div>
                         </div>
-<? } ?>
+                    <? } ?>
                     <div class="articles__pages">
                         <? echo $_PAGING->get_prev_page_link() . $_PAGING->get_page_links() . $_PAGING->get_next_page_link();
                         ?>

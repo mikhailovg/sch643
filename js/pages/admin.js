@@ -71,6 +71,7 @@ function addEventHandlers() {
         $( "#addNode_dialog" ).dialog( "open" );
     })
     $(".layout__save").click(function() {
+        $(".container_right").hide();
         updateSection($("#data #nodeId").val(), $("#data #sectionId").val());
     })
 }

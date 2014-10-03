@@ -25,7 +25,7 @@
 .background {
     background: #000 url("/img/background_light_cream.jpg") repeat fixed left bottom;
     margin-top: -2px;
-    /*height: 100%;*/
+    min-height: 100%;
 }
 .main {
     width: 86%;

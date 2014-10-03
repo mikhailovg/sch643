@@ -1,5 +1,8 @@
-
 $(document).ready(function () {
+
+
+
+
     if ($(".articles__pages a").length > 0) {
         $(".articles__pages a").show();
         $(".articles__pages span").show();

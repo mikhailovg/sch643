@@ -1,5 +1,4 @@
-<?
-include_once("../../support/connectBD.php");
+<?include_once("../../support/connectBD.php");
 include_once("../../support/dateFormat.php");
 require_once("../../shared/auth.php");
 
@@ -24,8 +23,8 @@ if (isset($_GET['article_id'])) {
         <link rel="stylesheet" href="/css/parts/template.css">
         <script src="/js/pages/article.js"></script>
 
-        <div class="template__columns">
-        <div class="template__left-column" style="position: relative">
+        <div class="container">
+        <div class="container_center" style="position: relative">
         <script>
             var article_id = <?=$id?>;
         </script>
@@ -68,12 +67,6 @@ if (isset($_GET['article_id'])) {
     }
 }
 ?>
-    </div>
-    <div class="template__right-column">
-        <?
-        $idEditOrLoadBlock = 4;
-        include ('../../parts/html.php');
-        ?>
     </div>
 </div>
 

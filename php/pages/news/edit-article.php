@@ -88,6 +88,7 @@ else if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
     <link rel="stylesheet" href="/css/pages/news/article.css">
     <link rel="stylesheet" href="/css/parts/template.css">
+    <link rel="stylesheet" href="/css/pages/layout1.css">
     <script src="/js/pages/edit-article.js"></script>
 
     <form method="POST" enctype="multipart/form-data">
@@ -164,7 +165,7 @@ else if ($_SERVER['REQUEST_METHOD'] == 'GET') {
         <div class="uploadImage__dialog" title="Загрузка изображения" style="display:none;">
 
         </div>
-        <button class="seto__button" type="submit">Опубликовать новость</button>
+        <button class="layout__save" type="submit">Опубликовать новость</button>
     </form>
 
     <div class="deleteArticle__dialog" title="Удаление новости" style="display:none;">
