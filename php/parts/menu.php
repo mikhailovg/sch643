@@ -1,9 +1,8 @@
-<link rel="stylesheet" href="/css/parts/menu.css">
 <link rel="stylesheet" href="/css/libs/menu.css">
 <script src="/js/libs/menu.js"></script>
 <script src="/js/parts/menu.js"></script>
 
-<ul id="navmenu-v">
+<ul class="navmenu-v">
     <li class="navmenu-v_first_level"><a href="#">Вертикальное</a>
         <ul>
             <li class="navmenu-v_second_level"><a href="#">Ссылка 1</a></li>

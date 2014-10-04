@@ -16,12 +16,10 @@
         <? }
     }
     ?>
-    <!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script-->
     <script src="/js/libs/tinymce/tinymce.min.js"></script>
     <script src="/js/libs/tinymce/langs/ru.js"></script>
     <script src="/js/libs/jquery.min.js"></script>
-    
-    <!--script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script-->
+
     <?
     if (isset($js_files)) {
         foreach($js_files as $js_file) { ?>

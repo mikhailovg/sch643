@@ -1,44 +1,48 @@
 /* CSS Document */
-ul#navmenu-v {
+/*.navmenu-v {
     float: left;
 
-}
+}*/
 
 /*
-ul#navmenu-v :first-child {
+ul.navmenu-v :first-child {
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
 }
-ul#navmenu-v :last-child {
+ul.navmenu-v :last-child {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
 
 }*/
-ul#navmenu-v,
-ul#navmenu-v .navmenu-v_first_level {
+
+.drop_vert_menu {
+   /* height: auto;*/
+}
+.navmenu-v,
+.navmenu-v li {
     width: 280px;
 }
 
-ul#navmenu-v .navmenu-v_second_level {
+.navmenu-v li ul li {
     width: 500px;
+    display: block;
 }
 
-ul#navmenu-v,
-ul#navmenu-v .navmenu-v_first_level,
-ul#navmenu-v .navmenu-v_second_level {
+.navmenu-v,
+.navmenu-v li  {
     z-index: 100;
 }
 
-ul#navmenu-v,
-ul#navmenu-v li,
-ul#navmenu-v ul {
+.navmenu-v,
+.navmenu-v li,
+.navmenu-v ul {
     margin: 0;
     border: 0 none;
     padding: 0;
     list-style: none;
 }
 
-ul#navmenu-v:after {
+.navmenu-v:after {
     clear: both;
     display: block;
     font: 1px/0px serif;
@@ -47,20 +51,20 @@ ul#navmenu-v:after {
     visibility: hidden;
 }
 
-ul#navmenu-v li {
+.navmenu-v li {
     float: left;
     display: block !important;
     display: inline;
     position: relative;
     border:#003366 1px solid;
 }
-ul#navmenu-v li ul li {
+.navmenu-v li ul li {
     border:none;
     border-bottom:#FFFFFF 2px solid;
 }
 
 /* Root Menu */
-ul#navmenu-v a {
+.navmenu-v a {
     padding: 0 6px;
     display: block;
     background: #003366;
@@ -72,27 +76,27 @@ ul#navmenu-v a {
 }
 
 
-ul#navmenu-v a:hover,
-ul#navmenu-v li:hover a,
-ul#navmenu-v li.iehover a {
+.navmenu-v a:hover,
+.navmenu-v li:hover a,
+.navmenu-v li.iehover a {
     background: #FFFFFF;
     color: #000000;
 
 }
 
 /* 2nd Menu */
-ul#navmenu-v li:hover li a,
-ul#navmenu-v li.iehover li a {
+.navmenu-v li:hover li a,
+.navmenu-v li.iehover li a {
     background: #003366;
     color: #FFFFFF;
     border:#003366 1px solid;
 }
 
 
-ul#navmenu-v li:hover li a:hover,
-ul#navmenu-v li:hover li:hover a,
-ul#navmenu-v li.iehover li a:hover,
-ul#navmenu-v li.iehover li.iehover a {
+.navmenu-v li:hover li a:hover,
+.navmenu-v li:hover li:hover a,
+.navmenu-v li.iehover li a:hover,
+.navmenu-v li.iehover li.iehover a {
     background: #FFFFFF;
     color: #003366;
     border:#003366 1px solid;
@@ -100,9 +104,8 @@ ul#navmenu-v li.iehover li.iehover a {
 
 
 
-ul#navmenu-v ul,
-ul#navmenu-v ul ul,
-ul#navmenu-v ul ul ul {
+.navmenu-v ul ul,
+.navmenu-v ul ul ul {
     display: none;
     position: absolute;
     top: 0;
@@ -110,18 +113,18 @@ ul#navmenu-v ul ul ul {
 }
 
 
-ul#navmenu-v li:hover ul ul,
-ul#navmenu-v li:hover ul ul ul,
-ul#navmenu-v li.iehover ul ul,
-ul#navmenu-v li.iehover ul ul ul {
+.navmenu-v li:hover ul ul,
+.navmenu-v li:hover ul ul ul,
+.navmenu-v li.iehover ul ul,
+.navmenu-v li.iehover ul ul ul {
     display: none;
 }
 
-ul#navmenu-v li:hover ul,
-ul#navmenu-v ul li:hover ul,
-ul#navmenu-v ul ul li:hover ul,
-ul#navmenu-v li.iehover ul,
-ul#navmenu-v ul li.iehover ul,
-ul#navmenu-v ul ul li.iehover ul {
+.navmenu-v li:hover ul,
+.navmenu-v ul li:hover ul,
+.navmenu-v ul ul li:hover ul,
+.navmenu-v li.iehover ul,
+.navmenu-v ul li.iehover ul,
+.navmenu-v ul ul li.iehover ul {
     display: block;
 }
