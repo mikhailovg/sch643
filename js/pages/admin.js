@@ -51,7 +51,7 @@ function createJSTrees() {
                 tinymce.remove();
                 $("#data #nodeId").val(data.rslt.obj.attr("parentId"));
                 $("#data #sectionId").val(data.rslt.obj.attr("id"));
-                $(".container_right").show();
+                $(".container_right_admin").show();
                 $(".layout__container textarea").val(data.rslt.obj.attr("htmlContent"));
                 tinyInit();
             }
@@ -71,7 +71,7 @@ function addEventHandlers() {
         $( "#addNode_dialog" ).dialog( "open" );
     })
     $(".layout__save").click(function() {
-        $(".container_right").hide();
+        $(".container_right_admin").hide();
         updateSection($("#data #nodeId").val(), $("#data #sectionId").val());
     })
 }
@@ -189,13 +189,24 @@ function updateSection(nodeId, sectionId) {
 function tinyInit() {
     tinymce.init({
         selector: "textarea",
+
+        charLimit : 1000000,
+        height : 600,
+        theme: "modern",
         plugins: [
-            "advlist autolink lists link image charmap print preview anchor",
-            "searchreplace visualblocks code fullscreen",
-            "insertdatetime media table contextmenu paste moxiemanager"
+            "advlist autolink lists link image charmap print preview hr anchor pagebreak",
+            "searchreplace wordcount visualblocks visualchars code fullscreen",
+            "insertdatetime media nonbreaking save table contextmenu directionality",
+            "emoticons template paste textcolor colorpicker textpattern"
         ],
-        toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
-        charLimit : 1000000
+        toolbar1: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
+        toolbar2: "print preview media | forecolor backcolor emoticons",
+        image_advtab: true,
+        templates: [
+            {title: 'Test template 1', content: 'Test 1'},
+            {title: 'Test template 2', content: 'Test 2'}
+        ]
+
     });
 
 }

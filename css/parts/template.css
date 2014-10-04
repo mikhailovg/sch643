@@ -23,21 +23,23 @@
     padding-left: 10px;
 }
 .background {
-    background: #000 url("/img/background_light_cream.jpg") repeat fixed left bottom;
+    background: #000 url("/img/paper.png") repeat fixed center top;
+    padding-top: 10px;
     margin-top: -2px;
     min-height: 100%;
 }
+
 .main {
     width: 86%;
     margin: 0 auto;
-    background: #fff;
+    background: #000 url("/img/background_light_cream.jpg") repeat fixed left bottom;
     border: 1px solid #C6C7C8;
     padding: 0 10px;
     border-radius: 6px;
 }
 
 #jstree {
-    background-color: white;
+    background: #000 url("/img/background_light_cream.jpg") repeat fixed left bottom;
     overflow: auto;
     padding: 0 0;
     border-right: 1px solid #c0c0c0;
@@ -65,21 +67,22 @@
     height: auto;
 }
 
-#page_container {
-    display: inline-block;
-}
 .container_left {
     float: left;
     width: 24%;
     position: relative;
 }
 .container_right {
+    margin-left: 24%;
+}
+.container_right_admin {
     display: none;
 }
 .container_center {
     margin-left: 38%;
     width: 24%;
 }
+
 html {
     height: 100%;
 }

@@ -19,22 +19,47 @@ $(function() {
         var listUi=$('<ul class="drop_vert_menu"></ul>');
         for(var i=0; i<nodes.length; ++i){
             var nodeUi=$('<li><a href="#"><span>'+nodes[i].name+'</span></a></li>');
-            nodeUi.hover(function(nodeUi,node){
-                return function(){
-                    getMenuItems(node.id,function(items){
-                        renderMenuItems(nodeUi,items,pageContainer);
-                    });
-                }
-            }(nodeUi,nodes[i]));
+
+            nodeUi.hover(
+                function(nodeUi, node){
+                    return function(){
+                        getMenuItems(node.id,function(items){
+                            renderMenuItems(nodeUi,items,pageContainer);
+                        });
+                        nodeUi.find('a').css('padding', '0 16px');
+                    }
+                }(nodeUi,nodes[i]),
+                function(nodeUi, node) {
+                    return function(){
+                        nodeUi.find('a').css('padding', '0 6px');
+                    }
+                }(nodeUi,nodes[i])
+            );
+
             nodeUi.click(function(node){
                 return function(e){
-                    e.stopPropagation();
+                   e.stopPropagation();
                    getPage(node.id, function(page){
                        renderPage(pageContainer,page);
                    })
                 }
             }(nodes[i]));
             listUi.append(nodeUi);
+
+            var styles;
+            if (i == 0) {
+                styles = {
+                    'border-top-left-radius': '5px',
+                    'border-top-right-radius': '5px'
+                };
+                $(nodeUi).find('a').css(styles);
+            } else if (i == nodes.length - 1) {
+                styles = {
+                    'border-bottom-right-radius': '5px'
+                };
+                $(nodeUi).find('a').css(styles);
+            }
+
         }
         menuContainer.append(listUi);
     }
@@ -56,8 +81,6 @@ $(function() {
     }
 
     function renderPage(pageContainer, page){
-        console.log(pageContainer)
-        console.log(page)
        pageContainer.html(page.htmlContent);
     }
 

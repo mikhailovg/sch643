@@ -1,26 +1,13 @@
 /* CSS Document */
 .navmenu-v {
     float: left;
+    border: 1px solid #c6c7c8;
+    border-radius: 6px;
 }
-.navmenu-v .drop_vert_menu{
-/*    border: 1px solid red;
-    border-radius: 6px;*/
-}
-/*
-ul.navmenu-v :first-child {
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-}
-ul.navmenu-v :last-child {
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
-
-}*/
-
-
 .navmenu-v,
 .navmenu-v li {
-    width: 280px;
+    width: 250px;
+    z-index: 100;
 }
 
 .navmenu-v li ul li {
@@ -28,12 +15,6 @@ ul.navmenu-v :last-child {
     display: block;
 }
 
-.navmenu-v,
-.navmenu-v li  {
-    z-index: 100;
-}
-
-.navmenu-v,
 .navmenu-v li,
 .navmenu-v ul {
     margin: 0;
@@ -51,17 +32,11 @@ ul.navmenu-v :last-child {
     visibility: hidden;
 }
 
-/*.navmenu-v  {
-    border:#003366 1px solid;
-    border-radius: 6px;
-}*/
 .navmenu-v li {
     float: left;
     display: block !important;
     display: inline;
     position: relative;
-  /*  border:#003366 1px solid;*/
-/*    border-radius: 6px;*/
 }
 .navmenu-v li ul li {
     border:none;
@@ -72,7 +47,7 @@ ul.navmenu-v :last-child {
 .navmenu-v a {
     padding: 0 6px;
     display: block;
-    background: url("/img/background_light_cream.jpg") repeat fixed left bottom #000;
+    background: linear-gradient(to right, #b3c4db, #f2f5f9);
     color: #043d8a;
     font: bold 12px/28px Verdana, Arial;
     text-decoration: none;
@@ -81,21 +56,22 @@ ul.navmenu-v :last-child {
 
 }
 
-
 .navmenu-v a:hover,
 .navmenu-v li:hover a,
 .navmenu-v li.iehover a {
-    background: url("/img/background_light_cream2.jpg") repeat fixed left bottom #000;
-    color: #B87333;
+    background: #819ec4;
+    background: linear-gradient(to right, #819ec4, #eaeff5);
+
 
 }
 
 /* 2nd Menu */
 .navmenu-v li:hover li a,
 .navmenu-v li.iehover li a {
-    background: url("/img/background_light_cream.jpg") repeat fixed left bottom #000;
+    background: linear-gradient(to right, #b3c4db, #f2f5f9);
     color: #043d8a;
-    border:#003366 1px solid;
+    margin-bottom: -2px;
+    opacity: 0.96;
 }
 
 
@@ -103,20 +79,17 @@ ul.navmenu-v :last-child {
 .navmenu-v li:hover li:hover a,
 .navmenu-v li.iehover li a:hover,
 .navmenu-v li.iehover li.iehover a {
-    background: url("/img/background_light_cream2.jpg") repeat fixed left bottom #000;
-    color: #B87333;
+    background: #819ec4;
+    background: linear-gradient(to right, #819ec4, #eaeff5);
 }
-
-
 
 .navmenu-v ul ul,
 .navmenu-v ul ul ul {
     display: none;
     position: absolute;
     top: 0;
-    left: 281px;
+    left: 251px;
 }
-
 
 .navmenu-v li:hover ul ul,
 .navmenu-v li:hover ul ul ul,

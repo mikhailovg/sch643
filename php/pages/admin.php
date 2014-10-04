@@ -16,7 +16,7 @@
             <div align="right"><span title="Добавить раздел" class="jstree_add_icon"></span></div>
             <div id="jstree"></div>
         </div>
-        <div class="container_right">
+        <div class="container_right_admin">
             <div class="login_title_right">Редактирование подраздела</div>
             <div id="data">
                 <input type="hidden" id="nodeId">

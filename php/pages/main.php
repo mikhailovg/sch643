@@ -6,8 +6,12 @@ require_once("../shared/auth.php");?>
 <div class="login_title">Главная</div>
 
 <div class="container">
-    <div class="navmenu-v"></div>
-    <div id="page_container"></div>
+    <div class="container_left">
+        <div class="navmenu-v container_left"></div>
+    </div>
+    <div class="container_right">
+        <div id="page_container"></div>
+    </div>
 </div>
 
 <?include_once("../parts/footer.php");?>
