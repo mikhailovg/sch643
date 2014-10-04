@@ -189,7 +189,33 @@ class AdminController {
             echo 'error writing';
         }
         fclose($fp);
-    } 
+    }
+
+    public function getPage($params){
+        $page = new Page();
+        $db = $this->settings->get("db");
+        $query = "SELECT * FROM page where id=?";
+        $stmt = $db->prepare($query);
+        $stmt -> bind_param("i", $params->get("id"));
+        $stmt->bind_result($page->id, $page->name, $page->title, $page->filePath, $page->layoutNumber, $page->creationDate, $page->status, $page->parentId);
+        $stmt->execute();
+        $pages = array();
+
+        while($stmt->fetch()){
+            $addPage = new Page();
+            $addPage->id = $page->id;
+            $addPage->name = $page->name;
+            $addPage->title = $page->title;
+            $addPage->filePath = $page->filePath;
+            $addPage->layoutNumber = $page->layoutNumber;
+            $addPage->creationDate = $page->creationDate;
+            $addPage->status = $page->status;
+            $pageDto=new \dto\PageDto();
+            $pageDto=$pageDto->map($page);
+            array_push($pages, $pageDto);
+        }
+        echo json_encode($pages,JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+    }
 }	
 
 ?>

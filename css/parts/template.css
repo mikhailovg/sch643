@@ -41,6 +41,7 @@
     overflow: auto;
     padding: 0 0;
     border-right: 1px solid #c0c0c0;
+    margin-bottom: 6px;
 }
 
 .jstree_add_icon {
@@ -51,8 +52,6 @@
     border-radius: 0;
     border: none;
     cursor: pointer;
-    /*right: 4px;
-    position: absolute;*/
 }
 
 #data {
@@ -61,9 +60,13 @@
 
 .container {
     margin-bottom: 4px;
-    /*min-height: 200px;*/
-    overflow: hidden;
+    min-height: 600px;
+    overflow: auto;
     height: auto;
+}
+
+#page_container {
+    display: inline-block;
 }
 .container_left {
     float: left;

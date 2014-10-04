@@ -18,7 +18,7 @@ class PageDto {
     //название вкладки
     public $title;
     //содержимое html страницы
-    public $htmlContent;
+    public $htmlContent="";
     //номер макета, из которого была создана страница
     public $layoutNumber;
     //дата создания

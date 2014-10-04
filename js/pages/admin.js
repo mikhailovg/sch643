@@ -79,10 +79,11 @@ function addEventHandlers() {
 function addNode(name, title) {
     $.ajax({
         async: false,
-        type: "GET",
+        type: "POST",
         data: {
             name: name,
-            title: title
+            title: title,
+            route: "admin/addNode"
         },
         url: "/admin/addNode",
         complete: function () {
@@ -93,10 +94,11 @@ function addNode(name, title) {
 function renameNode(id, name) {
     $.ajax({
         async: false,
-        type: "GET",
+        type: "POST",
         data: {
 			id: id,
-            name: name
+            name: name,
+            route: "admin/renameNode"
         },
         url: "/admin/renameNode",
         complete: function () {
@@ -107,9 +109,10 @@ function renameNode(id, name) {
 function deleteNode(id) {
     $.ajax({
         async: false,
-        type: "GET",
+        type: "POST",
         data: {
-			id: id	
+			id: id,
+            route: "admin/deleteNode"
         },
         url: "/admin/deleteNode",
         complete: function () {
@@ -122,11 +125,12 @@ function deleteNode(id) {
 function addSection(parentId, name, title) {
     $.ajax({
         async: false,
-        type: "GET",
+        type: "POST",
         data: {
             parentId: parentId,
             name: name,
-            title: title
+            title: title,
+            route: "admin/addSection"
         },
         url: "/admin/addSection",
         complete: function () {
@@ -137,10 +141,11 @@ function addSection(parentId, name, title) {
 function renameSection(id, name) {
     $.ajax({
         async: false,
-        type: "GET",
+        type: "POST",
         data: {
 			id: id,
-            name: name
+            name: name,
+            route: "admin/renameSection"
         },
         url: "/admin/renameSection",
         complete: function () {
@@ -151,10 +156,11 @@ function renameSection(id, name) {
 function deleteSection(id, filePath) {
     $.ajax({
         async: false,
-        type: "GET",
+        type: "POST",
         data: {
 			id: id,
-            filePath: filePath
+            filePath: filePath,
+            route: "admin/deleteSection"
         },
         url: "/admin/deleteSection",
         complete: function () {
@@ -166,11 +172,12 @@ function deleteSection(id, filePath) {
 function updateSection(nodeId, sectionId) {
 	$.ajax({
         async: false,
-        type: "GET",
+        type: "POST",
         data: {
 			nodeId: nodeId,
 			sectionId: sectionId,
-			filePath: tinymce.get(0).getContent()
+			filePath: tinymce.get(0).getContent(),
+            route: "admin/updateSection"
         },
         url: "/admin/updateSection",
         complete: function () {
@@ -187,8 +194,10 @@ function tinyInit() {
             "searchreplace visualblocks code fullscreen",
             "insertdatetime media table contextmenu paste moxiemanager"
         ],
-        toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
+        toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
+        charLimit : 1000000
     });
+
 }
 
 
