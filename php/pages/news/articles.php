@@ -7,6 +7,7 @@ include_once("../../support/connectBD.php");
 $css_files = array("/css/pages/news/articles.css",  "/css/parts/template.css");
 $js_files = array("/js/pages/news.js");
 include_once("../../parts/header.php");
+include_once("../../parts/menu.php");
 ?>
         <div style="margin-left: 30%;">
             <div class="articles__search" enctype="application/x-www-form-urlencoded" method="POST">

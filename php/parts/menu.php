@@ -1,62 +1,26 @@
 <link rel="stylesheet" href="/css/parts/menu.css">
-<link rel="stylesheet" href="/css/libs/liMenuHorTheme-gray.css">
+<link rel="stylesheet" href="/css/libs/menu.css">
 <script src="/js/libs/menu.js"></script>
 <script src="/js/parts/menu.js"></script>
 
-<ul class="menu_hor">
-    <li><a href="#1">Главная</a>
+<ul id="navmenu-v">
+    <li class="navmenu-v_first_level"><a href="#">Вертикальное</a>
         <ul>
-            <li><a href="#2-1">Новости</a>
-                <ul>
-                    <li><a href="#2-1">Подменю 1</a>
-                        <ul>
-                            <li><a href="#2-1">Подменю 1</a>
-                                <ul>
-                                    <li><a href="#2-1">Подменю 1</a>
-                                    <li><a href="#2-2">Подменю 2</a>
-                                    <li><a href="#2-3">Подменю 3</a>
-                                    <li><a href="#2-4">Подменю 4</a>
-                                </ul>
-                            <li><a href="#2-2">Подменю 2</a>
-                            <li><a href="#2-3">Подменю 3</a>
-                            <li><a href="#2-4">Подменю 4</a>
-                        </ul>
-                    <li><a href="#2-2">Подменю 2</a>
-                    <li><a href="#2-3">Подменю 3</a>
-                    <li><a href="#2-4">Подменю 4</a>
-                </ul>
-            <li><a href="#2-2">Сведения об образовательной организации</a>
-            <li><a href="#2-3">Учительская</a>
-            <li><a href="#2-4">Опытно-экспериментальная работа</a>
+            <li class="navmenu-v_second_level"><a href="#">Ссылка 1</a></li>
+            <li class="navmenu-v_second_level"><a href="#">Ссылка 2</a></li>
+        </ul></li>
+    <li class="navmenu-v_first_level"><a href="#">CSS</a>
+        <ul>
+            <li class="navmenu-v_second_level"><a href="#">Ссылка 1</a></li>
+            <li class="navmenu-v_second_level" ><a href="#">Ссылка 2</a></li>
+            <li class="navmenu-v_second_level"><a href="#">Ссылка 3</a></li>
+            <li class="navmenu-v_second_level"><a href="#">Ссылка 4</a></li>
+            <li class="navmenu-v_second_level"><a href="#">Ссылка 5</a></li>
         </ul>
-    <li><a href="#2">Пункт 2</a>
+    </li>
+    <li class="navmenu-v_first_level"><a href="#">Меню</a>
         <ul>
-            <li><a href="#2-1">Подменю 1</a>
-            <li><a href="#2-2">Подменю 2</a>
-            <li><a href="#2-3">Подменю 3</a>
-            <li><a href="#2-4">Подменю 4</a>
-        </ul>
-    <li><a href="#3">Пункт 3</a>
-        <ul>
-            <li><a href="#3-1">Подменю 1</a>
-            <li><a href="#3-2">Подменю 2</a>
-        </ul>
-    <li ><a href="#4">Пункт 4</a>
-        <ul>
-            <li><a href="#4-1">ПодменюПодменюПодменюПодменюПодменю 1</a>
-            <li><a href="#4-2">Подменю 2</a>
-            <li><a href="#4-3">Подменю 3</a>
-        </ul>
-    <li ><a href="#4">Пункт 4</a>
-        <ul>
-            <li><a href="#4-1">Подменю 6</a>
-            <li><a href="#4-2">Подменю 2</a>
-            <li><a href="#4-3">Подменю 3</a>
-        </ul><li><a href="#1">Главная</a>
-        <ul>
-            <li><a href="#2-1">Новости</a>
-            <li><a href="#2-2">Сведения об образовательной организации</a>
-            <li><a href="#2-3">Учительская</a>
-            <li><a href="#2-4">Опытно-экспериментальная работа</a>
-        </ul>
+            <li class="navmenu-v_second_level"><a href="#">Ссылка 1</a></li>
+            <li class="navmenu-v_second_level"><a href="#">Ссылка 2</a></li>
+        </ul></li>
 </ul>
