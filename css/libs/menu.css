@@ -1,8 +1,8 @@
 /* CSS Document */
 .navmenu-v {
     float: left;
-    border: 1px solid #c6c7c8;
-    border-radius: 6px;
+    /*border: 1px solid #c6c7c8;*/
+ /*   border-radius: 6px;*/
 }
 .navmenu-v,
 .navmenu-v li {
@@ -10,6 +10,9 @@
     z-index: 100;
 }
 
+.drop_vert_menu .drop_vert_menu {
+    border-radius: 0;
+}
 .navmenu-v li ul li {
     width: 500px;
     display: block;

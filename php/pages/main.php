@@ -2,9 +2,6 @@
 require_once("../shared/auth.php");?>
 <script src="/js/parts/menu.js"></script>
 <link rel="stylesheet" href="/css/libs/menu.css">
-
-<div class="login_title">Главная</div>
-
 <div class="container">
     <div class="container_left">
         <div class="navmenu-v container_left"></div>

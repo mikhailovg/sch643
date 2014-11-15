@@ -29,13 +29,13 @@
 ?>
 </head>
 <body><div class="background">
-		<div class="main">
+
 			<div class="header">
-				<a class="header__logo" href="/">
-					<img src="/img/logo.jpg">
-				</a>
+				<div class="header__logo">
+									</div>
 				<div class="header__title">
 					<h2 class="header__site-name">ГБОУ школа № 643</h2>
 					<span class="header__company-description">Официальный сайт ГБОУ школы № 643 Московского района Санкт-Петербурга</span>
 				</div>
 			</div>
+    <div class="main">

@@ -12,21 +12,27 @@ body {
     padding-top: 2px;
 }
 .header {
-    height: 110px;
+    height: 88px;
     position: relative;
+    width: 86%;
+    margin: 0px auto 6px auto;
+    background-color: whitesmoke;
+    border: 1px solid #C6C7C8;
+    padding: 0 10px;
+    border-radius: 6px;
 }
 .header__logo {
-    position: absolute;
-    top: 15px;
-    left: 20px
+    float: left;
+    background: url("../../img/school_logo.png") no-repeat;
+    width: 300px;
+    height: 85px;
+    margin-left: 10px;
 }
 .header__title {
-    height: 100px;
-    position: absolute;
-    top: 50px;
     text-align: center;
-    left: 310px;
-    margin-top: -15px;
+    position: absolute;
+    top: 20px;
+    left: 340px;
 }
 .header__site-name {
     color: #043D8A;
