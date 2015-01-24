@@ -68,7 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stmt->execute();
     $stmt->close();
 
-    header('Location: /php/pages/news/articles.php');
+    header('Location: ./php/pages/news/articles.php');
     die();
 }
 

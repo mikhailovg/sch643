@@ -25,12 +25,12 @@ class PageDto {
     public $creationDate;
     //активна, удалена, черновик
     public $status;
-    //активна, удалена, черновик
+    //
     public $parentId;
 
 
     public function map(&$page) {
-        if ($page->filePath !== '' && !is_null($page->filePath)) {
+        if ($page->filePath !== '' && !is_null($page->filePath) && file_exists($page->filePath)) {
             $this->htmlContent=file_get_contents($page->filePath);
         }
         $this->id=$page->id;

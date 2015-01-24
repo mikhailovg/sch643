@@ -28,6 +28,7 @@ class AdminController {
             $query = "SELECT id, name, title, filePath, layoutNumber, creationDate, status, parent_id FROM page where parent_id IS NULL";
             $stmt = $db->prepare($query);
         }
+
         $stmt->bind_result($page->id, $page->name, $page->title, $page->filePath, $page->layoutNumber, $page->creationDate, $page->status, $page->parentId);
         $stmt->execute();
 

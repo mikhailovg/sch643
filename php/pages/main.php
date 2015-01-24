@@ -1,6 +1,6 @@
 <?include_once("../parts/header.php");
 require_once("../shared/auth.php");?>
-<script src="/js/parts/menu.js"></script>
+<!--<script src="/js/parts/menu.js"></script>
 <link rel="stylesheet" href="/css/libs/menu.css">
 <div class="container">
     <div class="container_left">
@@ -10,8 +10,9 @@ require_once("../shared/auth.php");?>
         <div id="page_container"></div>
     </div>
 </div>
-
-<?include_once("../parts/footer.php");?>
+-->
+<?include_once("../parts/menu.php");
+include_once("../parts/footer.php");?>
 
 
 
