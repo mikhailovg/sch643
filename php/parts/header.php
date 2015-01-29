@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title><?=$page_title?></title>
+<!--    <title><?/*=$page_title*/?></title>-->
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="/css/libs/normalize.css" rel="stylesheet">
@@ -31,10 +31,11 @@
 <body><div class="background">
 
 			<div class="header">
-				<div class="header__logo">
-									</div>
+				<a href="http://643spb.edusite.ru">
+                    <div class="header__logo"></div>
+                </a>
 				<div class="header__title">
-					<h2 class="header__site-name">ГБОУ школа № 643</h2>
+                    <a href="http://643spb.edusite.ru"><h2 class="header__site-name">ГБОУ школа № 643</h2> </a>
 					<span class="header__company-description">Официальный сайт ГБОУ школы № 643 Московского района Санкт-Петербурга</span>
 				</div>
 			</div>

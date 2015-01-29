@@ -19,5 +19,7 @@ class Page{
     public $status;
     //активна, удалена, черновик
     public $parentId;
+    //если мы переходим на эту страницу
+    public $link;
 
 }

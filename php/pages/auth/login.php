@@ -1,10 +1,10 @@
-﻿<?$page_title = "Школа № 643 - Вход в администрирование";
+﻿﻿<?$page_title = "Школа № 643 - Вход в администрирование";
   include_once("../../parts/header.php");
   include_once("../../support/connectBD.php");
   require_once('../../shared/auth.php');
 
   if (isLoggedIn()) {
-      header('Location: /php/pages/admin.php');
+      header('Location: ../../pages/admin.php');
   } else {
       if($_SERVER['REQUEST_METHOD']==='POST'){
 
@@ -21,7 +21,7 @@
               session_start();
               $_SESSION['cn']=$login;
               $_SESSION['isAdmin']=true;
-              header('Location: /php/pages/admin.php');
+              header('Location: ../../pages/admin.php');
           }
       }
   } ?>

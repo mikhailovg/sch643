@@ -6,7 +6,7 @@
 }
 .navmenu-v,
 .navmenu-v li {
-    width: 250px;
+    width: 180px;
     z-index: 100;
 }
 
@@ -14,7 +14,7 @@
     border-radius: 0;
 }
 .navmenu-v li ul li {
-    width: 500px;
+    width: 360px;
     display: block;
 }
 
@@ -64,8 +64,7 @@
 .navmenu-v li.iehover a {
     background: #819ec4;
     background: linear-gradient(to right, #819ec4, #eaeff5);
-
-
+    color:#eaeff5;
 }
 
 /* 2nd Menu */
@@ -84,6 +83,7 @@
 .navmenu-v li.iehover li.iehover a {
     background: #819ec4;
     background: linear-gradient(to right, #819ec4, #eaeff5);
+    color:#eaeff5;
 }
 
 .navmenu-v ul ul,
@@ -91,7 +91,7 @@
     display: none;
     position: absolute;
     top: 0;
-    left: 251px;
+    left: 181px;
 }
 
 .navmenu-v li:hover ul ul,

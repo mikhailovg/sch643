@@ -27,7 +27,7 @@ class PageDto {
     public $status;
     //
     public $parentId;
-
+    public $link;
 
     public function map(&$page) {
         if ($page->filePath !== '' && !is_null($page->filePath) && file_exists($page->filePath)) {

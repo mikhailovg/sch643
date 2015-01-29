@@ -1,4 +1,5 @@
-<?$page_title = "Новости – Школа №643";
+<?
+$page_title = "Новости – Школа №643";
 require_once('../../shared/auth.php');
 require_once('../../shared/paging.php');
 include_once("../../support/dateFormat.php");

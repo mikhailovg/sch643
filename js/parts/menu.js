@@ -1,10 +1,9 @@
 $(function() {
     function getMenuItems(parentId, callback){
         $.ajax({
-            url: "/admin/getPagesByParent",
+            url: "/php/actions/shared/getPages.php",
             data: {
-                parentId: parentId,
-                route: "admin/getPagesByParent"
+                parentId: parentId
             },
             type: 'POST',
             success: function(nodes){
@@ -65,13 +64,16 @@ $(function() {
     }
 
     function getPage(pageId,callback){
+       /* if (pageId==19)
+            location.href='http://643spb.edusite.ru/php/pages/news/articles.php';*/
+       /* else
+            location.href='http://643spb.edusite.ru/php/actions/shared/getPage.php?id='+pageId;*/
         $.ajax({
-            url: "/admin/getPage",
+            url: "/php/actions/shared/getPage.php",
             data: {
-                id: pageId,
-                route: "admin/getPage"
+                id: pageId
             },
-            type: 'POST',
+            type: 'GET',
             success: function(page){
                 if(page)
                     callback(page[0]);

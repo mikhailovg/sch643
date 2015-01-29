@@ -8,6 +8,8 @@
     <input type="hidden" id="renameNode_dialog_parentId">
     <label>Имя раздела:</label>
     <input type="text" id="renameNode_dialog_name" class="text ui-widget-content ui-corner-all">
+    <select id="default_section" class="text ui-widget-content ui-corner-all">
+     </select>
 </div>
 <div id="deleteNode_dialog" class="adminDialog" title="Удаление раздела" style="display: none;">
     <input type="hidden" id="deleteNode_dialog_parentId">

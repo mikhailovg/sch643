@@ -64,17 +64,17 @@
 
 .container {
     margin-bottom: 4px;
-    overflow: auto;
+    overflow: hidden;
     height: auto;
 }
 
 .container_left {
     float: left;
-    width: 24%;
+    width: 20%;
     position: relative;
 }
 .container_right {
-    margin-left: 24%;
+    margin-left: 20%;
 }
 .container_right_admin {
     display: none;
@@ -83,7 +83,9 @@
     margin-left: 38%;
     width: 24%;
 }
-
+#page_container {
+    margin-top: 16px;
+}
 html {
     height: 100%;
 }
